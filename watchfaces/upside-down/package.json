@@ -1,0 +1,281 @@
+{
+  "version": "2.7.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite",
+            "emery"
+          ],
+          "type": "font",
+          "name": "FONT_SIMPLIFICA_88",
+          "file": "fonts/simplifica.ttf",
+          "characterRegex": "[0-9]"
+        },
+        {
+          "type": "font",
+          "name": "FONT_WEATHER_ICON_45",
+          "file": "fonts/weather_icons.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_REGULAR_14",
+          "file": "fonts/droid_sans_regular.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_REGULAR_18",
+          "file": "fonts/droid_sans_regular.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_BOLD_14",
+          "file": "fonts/droid_sans_bold.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_0",
+          "file": "numbers/0.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_1",
+          "file": "numbers/1.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_2",
+          "file": "numbers/2.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_3",
+          "file": "numbers/3.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_4",
+          "file": "numbers/4.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_5",
+          "file": "numbers/5.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_6",
+          "file": "numbers/6.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_7",
+          "file": "numbers/7.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_8",
+          "file": "numbers/8.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "emery"
+          ],
+          "type": "pbi8",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_9",
+          "file": "numbers/9.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_0",
+          "file": "numbers/0.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_1",
+          "file": "numbers/1.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_2",
+          "file": "numbers/2.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_3",
+          "file": "numbers/3.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_4",
+          "file": "numbers/4.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_5",
+          "file": "numbers/5.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_6",
+          "file": "numbers/6.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_7",
+          "file": "numbers/7.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_8",
+          "file": "numbers/8.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_UPSIDE_DOWN_NUMBER_9",
+          "file": "numbers/9.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "0833976a-317b-45b5-b0c3-11b0d9e84e88",
+    "messageKeys": {
+      "btdisalert": 0,
+      "temperature": 101,
+      "checksum": 1002,
+      "top_colour": 6,
+      "btrealert": 1,
+      "minutely_animations": 5,
+      "bottom_colour": 7,
+      "request_weather": 200,
+      "pebbleAccountToken": 6969,
+      "weather": 2,
+      "email": 1000,
+      "date": 4,
+      "accessCode": 1001,
+      "day": 3,
+      "icon": 100
+    },
+    "enableMultiJS": true,
+    "displayName": "UpsideDown",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "UpsideDown"
+}

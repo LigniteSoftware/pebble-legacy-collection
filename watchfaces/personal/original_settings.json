@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "title":"General",
+            "items":[
+                {
+                    "type":"toggle",
+                    "label":"Bluetooth disconnect alert"
+                },
+                {
+                    "type":"toggle",
+                    "label":"Bluetooth reconnect alert"
+                }
+            ]
+        },
+        {
+            "title":"Your Time",
+            "items":[
+                {
+                    "type":"text_box",
+                    "label":"Name"
+                },
+                {
+                    "type":"colour",
+                    "label":"Colour"
+                },
+                {
+                    "type":"toggle",
+                    "label":"Analogue circles"
+                }
+            ]
+        }
+    ]
+}

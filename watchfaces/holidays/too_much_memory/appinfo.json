@@ -1,0 +1,167 @@
+{
+  "uuid": "2eaaeb88-b4cb-4eb4-a0b8-82896d67ca1d",
+  "shortName": "Holidays",
+  "longName": "Holidays",
+  "companyName": "Lignite",
+  "versionLabel": "0.1",
+  "sdkVersion": "3",
+  "targetPlatforms": ["basalt", "chalk"],
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+        {
+            "type":"png",
+            "file":"images/day/sky.png",
+            "name":"IMAGE_DAY_SKY"
+        },
+        {
+            "type":"png",
+            "file":"images/day/land-1.png",
+            "name":"IMAGE_DAY_LAND_1"
+        },
+        {
+            "type":"png",
+            "file":"images/day/land-2.png",
+            "name":"IMAGE_DAY_LAND_2"
+        },
+        {
+            "type":"png",
+            "file":"images/day/land-3.png",
+            "name":"IMAGE_DAY_LAND_3"
+        },
+        {
+            "type":"png",
+            "file":"images/day/land-4.png",
+            "name":"IMAGE_DAY_LAND_4"
+        },
+        {
+            "type":"png",
+            "file":"images/day/land-5.png",
+            "name":"IMAGE_DAY_LAND_5"
+        },
+        {
+            "type":"png",
+            "file":"images/day/land-6.png",
+            "name":"IMAGE_DAY_LAND_6"
+        },
+        {
+            "type":"png",
+            "file":"images/day/sun.png",
+            "name":"IMAGE_DAY_SUN"
+        },
+        {
+            "type":"png",
+            "file":"images/day/tree.png",
+            "name":"IMAGE_DAY_TREE"
+        },
+
+        {
+            "type":"png",
+            "file":"images/evening/sky.png",
+            "name":"IMAGE_EVENING_SKY"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/land-1.png",
+            "name":"IMAGE_EVENING_LAND_1"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/land-2.png",
+            "name":"IMAGE_EVENING_LAND_2"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/land-3.png",
+            "name":"IMAGE_EVENING_LAND_3"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/land-4.png",
+            "name":"IMAGE_EVENING_LAND_4"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/land-5.png",
+            "name":"IMAGE_EVENING_LAND_5"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/land-6.png",
+            "name":"IMAGE_EVENING_LAND_6"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/moon.png",
+            "name":"IMAGE_EVENING_MOON"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/tree.png",
+            "name":"IMAGE_EVENING_TREE"
+        },
+        {
+            "type":"png",
+            "file":"images/evening/lights.png",
+            "name":"IMAGE_EVENING_LIGHTS"
+        },
+
+        {
+            "type":"png",
+            "file":"images/night/sky.png",
+            "name":"IMAGE_NIGHT_SKY"
+        },
+        {
+            "type":"png",
+            "file":"images/night/land-1.png",
+            "name":"IMAGE_NIGHT_LAND_1"
+        },
+        {
+            "type":"png",
+            "file":"images/night/land-2.png",
+            "name":"IMAGE_NIGHT_LAND_2"
+        },
+        {
+            "type":"png",
+            "file":"images/night/land-3.png",
+            "name":"IMAGE_NIGHT_LAND_3"
+        },
+        {
+            "type":"png",
+            "file":"images/night/land-4.png",
+            "name":"IMAGE_NIGHT_LAND_4"
+        },
+        {
+            "type":"png",
+            "file":"images/night/land-5.png",
+            "name":"IMAGE_NIGHT_LAND_5"
+        },
+        {
+            "type":"png",
+            "file":"images/night/land-6.png",
+            "name":"IMAGE_NIGHT_LAND_6"
+        },
+        {
+            "type":"png",
+            "file":"images/night/moon.png",
+            "name":"IMAGE_NIGHT_MOON"
+        },
+        {
+            "type":"png",
+            "file":"images/night/tree.png",
+            "name":"IMAGE_NIGHT_TREE"
+        },
+        {
+            "type":"png",
+            "file":"images/night/lights.png",
+            "name":"IMAGE_NIGHT_LIGHTS"
+        }
+
+    ]
+  }
+}

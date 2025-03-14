@@ -1,0 +1,666 @@
+[
+  {
+    "abbreviation":"CEDT",
+    "fullname":"Central European Daylight Time"
+  },
+  {
+    "abbreviation":"CEST",
+    "fullname":"Central European Summer Time"
+  },
+  {
+    "abbreviation":"CET",
+    "fullname":"Central European Time"
+  },
+  {
+    "abbreviation":"CHADT",
+    "fullname":"Chatham Daylight Time"
+  },
+  {
+    "abbreviation":"CHAST",
+    "fullname":"Chatham Standard Time"
+  },
+  {
+    "abbreviation":"CHOT",
+    "fullname":"Choibalsan"
+  },
+  {
+    "abbreviation":"ChST",
+    "fullname":"Chamorro Standard Time"
+  },
+  {
+    "abbreviation":"CHUT",
+    "fullname":"Chuuk Time"
+  },
+  {
+    "abbreviation":"CIST",
+    "fullname":"Clipperton Island Standard Time"
+  },
+  {
+    "abbreviation":"CIT",
+    "fullname":"Central Indonesia Time"
+  },
+  {
+    "abbreviation":"CKT",
+    "fullname":"Cook Island Time"
+  },
+  {
+    "abbreviation":"CLST",
+    "fullname":"Chile Summer Time"
+  },
+  {
+    "abbreviation":"CLT",
+    "fullname":"Chile Standard Time"
+  },
+  {
+    "abbreviation":"COST",
+    "fullname":"Colombia Summer Time"
+  },
+  {
+    "abbreviation":"COT",
+    "fullname":"Colombia Time"
+  },
+  {
+    "abbreviation":"CST",
+    "fullname":"Central Standard Time (North America)"
+  },
+  {
+    "abbreviation":"CST",
+    "fullname":"China Standard Time"
+  },
+  {
+    "abbreviation":"CST",
+    "fullname":"Central Standard Time (Australia)"
+  },
+  {
+    "abbreviation":"CST",
+    "fullname":"Central Summer Time (Australia)"
+  },
+  {
+    "abbreviation":"CST",
+    "fullname":"Cuba Standard Time"
+  },
+  {
+    "abbreviation":"CT",
+    "fullname":"China time"
+  },
+  {
+    "abbreviation":"CVT",
+    "fullname":"Cape Verde Time"
+  },
+  {
+    "abbreviation":"CWST",
+    "fullname":"Central Western Standard Time (Australia)"
+  },
+  {
+    "abbreviation":"CXT",
+    "fullname":"Christmas Island Time"
+  },
+  {
+    "abbreviation":"DAVT",
+    "fullname":"Davis Time"
+  },
+  {
+    "abbreviation":"DDUT",
+    "fullname":"Dumont d'Urville Time"
+  },
+  {
+    "abbreviation":"EASST",
+    "fullname":"Easter Island Standard Summer Time"
+  },
+  {
+    "abbreviation":"EAST",
+    "fullname":"Easter Island Standard Time"
+  },
+  {
+    "abbreviation":"EAT",
+    "fullname":"East Africa Time"
+  },
+  {
+    "abbreviation":"ECT",
+    "fullname":"Eastern Caribbean Time"
+  },
+  {
+    "abbreviation":"ECT",
+    "fullname":"Ecuador Time"
+  },
+  {
+    "abbreviation":"EDT",
+    "fullname":"Eastern Daylight Time (North America)"
+  },
+  {
+    "abbreviation":"EEDT",
+    "fullname":"Eastern European Daylight Time"
+  },
+  {
+    "abbreviation":"EEST",
+    "fullname":"Eastern European Summer Time"
+  },
+  {
+    "abbreviation":"EET",
+    "fullname":"Eastern European Time"
+  },
+  {
+    "abbreviation":"EGST",
+    "fullname":"Eastern Greenland Summer Time"
+  },
+  {
+    "abbreviation":"EGT",
+    "fullname":"Eastern Greenland Time"
+  },
+  {
+    "abbreviation":"EIT",
+    "fullname":"Eastern Indonesian Time"
+  },
+  {
+    "abbreviation":"EST",
+    "fullname":"Eastern Standard Time (North America)"
+  },
+  {
+    "abbreviation":"EST",
+    "fullname":"Eastern Standard Time (Australia)"
+  },
+  {
+    "abbreviation":"FET",
+    "fullname":"Further-eastern European Time"
+  },
+  {
+    "abbreviation":"FJT",
+    "fullname":"Fiji Time"
+  },
+  {
+    "abbreviation":"FKST",
+    "fullname":"Falkland Islands Standard Time"
+  },
+  {
+    "abbreviation":"FKST",
+    "fullname":"Falkland Islands Summer Time"
+  },
+  {
+    "abbreviation":"FKT",
+    "fullname":"Falkland Islands Time"
+  },
+  {
+    "abbreviation":"FNT",
+    "fullname":"Fernando de Noronha Time"
+  },
+  {
+    "abbreviation":"GALT",
+    "fullname":"Galapagos Time"
+  },
+  {
+    "abbreviation":"GAMT",
+    "fullname":"Gambier Islands"
+  },
+  {
+    "abbreviation":"GET",
+    "fullname":"Georgia Standard Time"
+  },
+  {
+    "abbreviation":"GFT",
+    "fullname":"French Guiana Time"
+  },
+  {
+    "abbreviation":"GILT",
+    "fullname":"Gilbert Island Time"
+  },
+  {
+    "abbreviation":"GIT",
+    "fullname":"Gambier Island Time"
+  },
+  {
+    "abbreviation":"GMT",
+    "fullname":"Greenwich Standard Time"
+  },
+  {
+    "abbreviation":"GST",
+    "fullname":"South Georgia and the South Sandwich Islands"
+  },
+  {
+    "abbreviation":"GST",
+    "fullname":"Gulf Standard Time"
+  },
+  {
+    "abbreviation":"GYT",
+    "fullname":"Guyana Time"
+  },
+  {
+    "abbreviation":"HADT",
+    "fullname":"Hawaii-Aleutian Daylight Time"
+  },
+  {
+    "abbreviation":"HAST",
+    "fullname":"Hawaii-Aleutian Standard Time"
+  },
+  {
+    "abbreviation":"HKT",
+    "fullname":"Hong Kong Time"
+  },
+  {
+    "abbreviation":"HMT",
+    "fullname":"Heard and McDonald Islands Time"
+  },
+  {
+    "abbreviation":"HOVT",
+    "fullname":"Khovd Time"
+  },
+  {
+    "abbreviation":"HST",
+    "fullname":"Hawaii Standard Time"
+  },
+  {
+    "abbreviation":"ICT",
+    "fullname":"Indochina Time"
+  },
+  {
+    "abbreviation":"IDT",
+    "fullname":"Israel Daylight Time"
+  },
+  {
+    "abbreviation":"IOT",
+    "fullname":"Indian Ocean Time"
+  },
+  {
+    "abbreviation":"IRDT",
+    "fullname":"Iran Daylight Time"
+  },
+  {
+    "abbreviation":"IRKT",
+    "fullname":"Irkutsk Time"
+  },
+  {
+    "abbreviation":"IRST",
+    "fullname":"Iran Standard Time"
+  },
+  {
+    "abbreviation":"IST",
+    "fullname":"Indian Standard Time"
+  },
+  {
+    "abbreviation":"IST",
+    "fullname":"Irish Standard Time[5]"
+  },
+  {
+    "abbreviation":"IST",
+    "fullname":"Israel Standard Time"
+  },
+  {
+    "abbreviation":"JST",
+    "fullname":"Japan Standard Time"
+  },
+  {
+    "abbreviation":"KGT",
+    "fullname":"Kyrgyzstan time"
+  },
+  {
+    "abbreviation":"KOST",
+    "fullname":"Kosrae Time"
+  },
+  {
+    "abbreviation":"KRAT",
+    "fullname":"Krasnoyarsk Time"
+  },
+  {
+    "abbreviation":"KST",
+    "fullname":"Korea Standard Time"
+  },
+  {
+    "abbreviation":"LHST",
+    "fullname":"Lord Howe Standard Time"
+  },
+  {
+    "abbreviation":"LHST",
+    "fullname":"Lord Howe Summer Time"
+  },
+  {
+    "abbreviation":"LINT",
+    "fullname":"Line Islands Time"
+  },
+  {
+    "abbreviation":"MAGT",
+    "fullname":"Magadan Time"
+  },
+  {
+    "abbreviation":"MART",
+    "fullname":"Marquesas Islands Time"
+  },
+  {
+    "abbreviation":"MAWT",
+    "fullname":"Mawson Station Time"
+  },
+  {
+    "abbreviation":"MDT",
+    "fullname":"Mountain Daylight Time (North America)"
+  },
+  {
+    "abbreviation":"MET",
+    "fullname":"Middle European Time"
+  },
+  {
+    "abbreviation":"MEST",
+    "fullname":"Middle European Saving Time"
+  },
+  {
+    "abbreviation":"MHT",
+    "fullname":"Marshall Islands"
+  },
+  {
+    "abbreviation":"MIST",
+    "fullname":"Macquarie Island Station Time"
+  },
+  {
+    "abbreviation":"MIT",
+    "fullname":"Marquesas Islands Time"
+  },
+  {
+    "abbreviation":"MMT",
+    "fullname":"Myanmar Time"
+  },
+  {
+    "abbreviation":"MSK",
+    "fullname":"Moscow Time"
+  },
+  {
+    "abbreviation":"MST",
+    "fullname":"Malaysia Standard Time"
+  },
+  {
+    "abbreviation":"MST",
+    "fullname":"Mountain Standard Time (North America)"
+  },
+  {
+    "abbreviation":"MST",
+    "fullname":"Myanmar Standard Time"
+  },
+  {
+    "abbreviation":"MUT",
+    "fullname":"Mauritius Time"
+  },
+  {
+    "abbreviation":"MVT",
+    "fullname":"Maldives Time"
+  },
+  {
+    "abbreviation":"MYT",
+    "fullname":"Malaysia Time"
+  },
+  {
+    "abbreviation":"NCT",
+    "fullname":"New Caledonia Time"
+  },
+  {
+    "abbreviation":"NDT",
+    "fullname":"Newfoundland Daylight Time"
+  },
+  {
+    "abbreviation":"NFT",
+    "fullname":"Norfolk Time"
+  },
+  {
+    "abbreviation":"NPT",
+    "fullname":"Nepal Time"
+  },
+  {
+    "abbreviation":"NST",
+    "fullname":"Newfoundland Standard Time"
+  },
+  {
+    "abbreviation":"NT",
+    "fullname":"Newfoundland Time"
+  },
+  {
+    "abbreviation":"NUT",
+    "fullname":"Niue Time"
+  },
+  {
+    "abbreviation":"NZDT",
+    "fullname":"New Zealand Daylight Time"
+  },
+  {
+    "abbreviation":"NZST",
+    "fullname":"New Zealand Standard Time"
+  },
+  {
+    "abbreviation":"OMST",
+    "fullname":"Omsk Time"
+  },
+  {
+    "abbreviation":"ORAT",
+    "fullname":"Oral Time"
+  },
+  {
+    "abbreviation":"PDT",
+    "fullname":"Pacific Daylight Time (North America)"
+  },
+  {
+    "abbreviation":"PET",
+    "fullname":"Peru Time"
+  },
+  {
+    "abbreviation":"PETT",
+    "fullname":"Kamchatka Time"
+  },
+  {
+    "abbreviation":"PGT",
+    "fullname":"Papua New Guinea Time"
+  },
+  {
+    "abbreviation":"PHOT",
+    "fullname":"Phoenix Island Time"
+  },
+  {
+    "abbreviation":"PKT",
+    "fullname":"Pakistan Standard Time"
+  },
+  {
+    "abbreviation":"PMDT",
+    "fullname":"Saint Pierre and Miquelon Daylight time"
+  },
+  {
+    "abbreviation":"PMST",
+    "fullname":"Saint Pierre and Miquelon Standard Time"
+  },
+  {
+    "abbreviation":"PONT",
+    "fullname":"Pohnpei Standard Time"
+  },
+  {
+    "abbreviation":"PST",
+    "fullname":"Pacific Standard Time (North America)"
+  },
+  {
+    "abbreviation":"PST",
+    "fullname":"Philippine Standard Time"
+  },
+  {
+    "abbreviation":"PYST",
+    "fullname":"Paraguay Summer Time (South America)[6]"
+  },
+  {
+    "abbreviation":"PYT",
+    "fullname":"Paraguay Time (South America)[7]"
+  },
+  {
+    "abbreviation":"RET",
+    "fullname":"Réunion Time"
+  },
+  {
+    "abbreviation":"ROTT",
+    "fullname":"Rothera Research Station Time"
+  },
+  {
+    "abbreviation":"SAKT",
+    "fullname":"Sakhalin Island time"
+  },
+  {
+    "abbreviation":"SAMT",
+    "fullname":"Samara Time"
+  },
+  {
+    "abbreviation":"SAST",
+    "fullname":"South African Standard Time"
+  },
+  {
+    "abbreviation":"SBT",
+    "fullname":"Solomon Islands Time"
+  },
+  {
+    "abbreviation":"SCT",
+    "fullname":"Seychelles Time"
+  },
+  {
+    "abbreviation":"SGT",
+    "fullname":"Singapore Time"
+  },
+  {
+    "abbreviation":"SLST",
+    "fullname":"Sri Lanka Time"
+  },
+  {
+    "abbreviation":"SRET",
+    "fullname":"Srednekolymsk Time"
+  },
+  {
+    "abbreviation":"SRT",
+    "fullname":"Suriname Time"
+  },
+  {
+    "abbreviation":"SST",
+    "fullname":"Samoa Standard Time"
+  },
+  {
+    "abbreviation":"SST",
+    "fullname":"Singapore Standard Time"
+  },
+  {
+    "abbreviation":"SYOT",
+    "fullname":"Showa Station Time"
+  },
+  {
+    "abbreviation":"TAHT",
+    "fullname":"Tahiti Time"
+  },
+  {
+    "abbreviation":"THA",
+    "fullname":"Thailand Standard Time"
+  },
+  {
+    "abbreviation":"TFT",
+    "fullname":"Indian/Kerguelen"
+  },
+  {
+    "abbreviation":"TJT",
+    "fullname":"Tajikistan Time"
+  },
+  {
+    "abbreviation":"TKT",
+    "fullname":"Tokelau Time"
+  },
+  {
+    "abbreviation":"TLT",
+    "fullname":"Timor Leste Time"
+  },
+  {
+    "abbreviation":"TMT",
+    "fullname":"Turkmenistan Time"
+  },
+  {
+    "abbreviation":"TOT",
+    "fullname":"Tonga Time"
+  },
+  {
+    "abbreviation":"TVT",
+    "fullname":"Tuvalu Time"
+  },
+  {
+    "abbreviation":"UCT",
+    "fullname":"Coordinated Universal Time"
+  },
+  {
+    "abbreviation":"ULAT",
+    "fullname":"Ulaanbaatar Time"
+  },
+  {
+    "abbreviation":"USZ1",
+    "fullname":"Kaliningrad Time"
+  },
+  {
+    "abbreviation":"UTC",
+    "fullname":"Coordinated Universal Time"
+  },
+  {
+    "abbreviation":"UYST",
+    "fullname":"Uruguay Summer Time"
+  },
+  {
+    "abbreviation":"UYT",
+    "fullname":"Uruguay Standard Time"
+  },
+  {
+    "abbreviation":"UZT",
+    "fullname":"Uzbekistan Time"
+  },
+  {
+    "abbreviation":"VET",
+    "fullname":"Venezuelan Standard Time"
+  },
+  {
+    "abbreviation":"VLAT",
+    "fullname":"Vladivostok Time"
+  },
+  {
+    "abbreviation":"VOLT",
+    "fullname":"Volgograd Time"
+  },
+  {
+    "abbreviation":"VOST",
+    "fullname":"Vostok Station Time"
+  },
+  {
+    "abbreviation":"VUT",
+    "fullname":"Vanuatu Time"
+  },
+  {
+    "abbreviation":"WAKT",
+    "fullname":"Wake Island Time"
+  },
+  {
+    "abbreviation":"WAST",
+    "fullname":"West Africa Summer Time"
+  },
+  {
+    "abbreviation":"WAT",
+    "fullname":"West Africa Time"
+  },
+  {
+    "abbreviation":"WEDT",
+    "fullname":"Western European Daylight Time"
+  },
+  {
+    "abbreviation":"WEST",
+    "fullname":"Western European Summer Time"
+  },
+  {
+    "abbreviation":"WET",
+    "fullname":"Western European Time"
+  },
+  {
+    "abbreviation":"WIT",
+    "fullname":"Western Indonesian Time"
+  },
+  {
+    "abbreviation":"WST",
+    "fullname":"Western Standard Time"
+  },
+  {
+    "abbreviation":"YAKT",
+    "fullname":"Yakutsk Time"
+  },
+  {
+    "abbreviation":"YEKT",
+    "fullname":"Yekaterinburg Time"
+  },
+  {
+    "abbreviation":"Z",
+    "fullname":"Zulu Time (Coordinated Universal Time)"
+  }
+]

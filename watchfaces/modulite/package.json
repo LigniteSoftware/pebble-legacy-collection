@@ -1,0 +1,213 @@
+{
+  "version": "1.16.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_HEART_ICON",
+          "file": "icons/heart-icon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_DEEP_SLEEP_ICON",
+          "file": "icons/sleep-icon-deep.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_TOTAL_SLEEP_ICON",
+          "file": "icons/sleep-icon-light.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_STEPS_ICON",
+          "file": "icons/steps-icon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_DISTANCE_WALKED_ICON",
+          "file": "icons/walked-distance.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_CALORIES_ICON",
+          "file": "icons/calories.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BATTERY_ICON",
+          "file": "icons/battery-icon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BATTERY_CHARGING_ICON",
+          "file": "icons/battery-icon-charging.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BLUETOOTH_ICON",
+          "file": "icons/bluetooth-new.png"
+        },
+        {
+          "targetPlatforms": [
+            "chalk"
+          ],
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_REGULAR_32",
+          "file": "fonts/bebasneue_regular.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "chalk"
+          ],
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_REGULAR_42",
+          "file": "fonts/bebasneue_regular.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+          ],
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_REGULAR_30",
+          "file": "fonts/bebasneue_regular.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+          ],
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_REGULAR_36",
+          "file": "fonts/bebasneue_regular.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "chalk"
+          ],
+          "type": "font",
+          "name": "FONT_WEATHER_ICONS_44",
+          "file": "fonts/weather_icons.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "chalk"
+          ],
+          "type": "font",
+          "name": "FONT_WEATHER_ICONS_38",
+          "file": "fonts/weather_icons.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+          ],
+          "type": "font",
+          "name": "FONT_WEATHER_ICONS_40",
+          "file": "fonts/weather_icons.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+          ],
+          "type": "font",
+          "name": "FONT_WEATHER_ICONS_36",
+          "file": "fonts/weather_icons.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+          ],
+          "type": "bitmap",
+          "name": "IMAGE_BACKGROUND_ANALOGUE_TICKS",
+          "file": "analogue-background.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+          ],
+          "type": "bitmap",
+          "name": "IMAGE_BACKGROUND_ANALOGUE_DOTS",
+          "file": "dots-background.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "4a5b2a1c-2493-416c-ac5a-cf6dc9c3d815",
+    "messageKeys": {
+      "mod_shake_to_hide_hands": 19,
+      "custom_location": 18,
+      "mod_second_hand_colour": 21,
+      "mod_accent_colour_left": 9,
+      "temperature": 101,
+      "mod_btrealert": 1,
+      "mod_hour_hand": 23,
+      "use_celsius": 17,
+      "mod_data_type_left": 8,
+      "accessCode": 1001,
+      "pebbleAccountToken": 6969,
+      "mod_imperial_measurements": 20,
+      "email": 1000,
+      "gs_date_format": 2000,
+      "mod_background_colour": 10,
+      "mod_second_hand": 15,
+      "mod_outer_circle_background_colour": 22,
+      "mod_analogue_hands": 14,
+      "mod_outer_circle_colour": 13,
+      "mod_accent_colour_bottom": 7,
+      "mod_hour_hand_colour": 11,
+      "mod_data_type_right": 4,
+      "icon": 100,
+      "mod_btdisalert": 0,
+      "mod_outer_circle_type": 16,
+      "request_weather": 200,
+      "mod_minute_hand": 24,
+      "mod_minute_hand_colour": 12,
+      "checksum": 1002,
+      "mod_data_type_bottom": 6,
+      "mod_accent_colour_right": 5,
+      "mod_accent_colour_top": 3,
+      "mod_data_type_top": 2
+    },
+    "enableMultiJS": true,
+    "displayName": "Modulite",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "capabilities": [
+      "configurable",
+      "health"
+    ]
+  },
+  "name": "Modulite"
+}

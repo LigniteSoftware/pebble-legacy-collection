@@ -1,0 +1,59 @@
+{
+  "version": "1.5.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_BLOCKED_50",
+          "file": "blocked.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_BLOCKED_30",
+          "file": "blocked.ttf"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_BT_DISCONNECTED",
+          "file": "lignite/bt-disconnected.png"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_BT_RECONNECTED",
+          "file": "lignite/bt-reconnected.png"
+        },
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "MENU_ICON",
+          "file": "menu.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "1f626d76-38d8-4353-b930-c65a109260c7",
+    "messageKeys": {},
+    "enableMultiJS": false,
+    "displayName": "Chunky",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "diorite"
+    ],
+    "capabilities": []
+  },
+  "name": "Chunky"
+}

@@ -1,0 +1,108 @@
+{
+  "version": "2.5.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_20",
+          "file": "fonts/bebas_neue.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_BOLD_20",
+          "file": "fonts/bebas_neue_bold.ttf"
+        },
+        {
+          "characterRegex": "[0-9, \\-]",
+          "targetPlatforms": [
+            "chalk"
+          ],
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_76",
+          "file": "fonts/bebas_neue.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+          ],
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_62",
+          "file": "fonts/bebas_neue.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_16",
+          "file": "fonts/droid_sans.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_18",
+          "file": "fonts/bebas_neue.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_BOLD_18",
+          "file": "fonts/bebas_neue_bold.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_14",
+          "file": "fonts/droid_sans.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_BOLD_14",
+          "file": "fonts/droid_sans_bold.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "62435f82-8693-4572-b8cf-2638f9343f8c",
+    "messageKeys": {
+      "btdisalert": 0,
+      "btrealert": 1,
+      "pebbleAccountToken": 6969,
+      "accent": 6,
+      "background_colour": 7,
+      "battery_bar": 5,
+      "gs_date_format": 2000,
+      "email": 1000,
+      "checksum": 1002,
+      "date": 4,
+      "accessCode": 1001,
+      "day": 3
+    },
+    "enableMultiJS": true,
+    "displayName": "Essentialy",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Essentialy"
+}

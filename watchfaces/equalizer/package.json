@@ -1,0 +1,76 @@
+{
+  "version": "2.6.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "MENU_ICON",
+          "file": "menu.png"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_24",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_16",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_12",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "13738de7-03bc-45bd-a3fc-42943b55113c",
+    "messageKeys": {
+      "accessCode": 1001,
+      "equ_animation_mode": 3,
+      "equ_btdisalert": 0,
+      "equ_btrealert": 1,
+      "equ_organize_colours": 4,
+      "equ_battery_bar_colour": 9,
+      "equ_show_day": 5,
+      "gs_date_format": 2000,
+      "equ_background_colour": 8,
+      "pebbleAccountToken": 6969,
+      "checksum": 1002,
+      "equ_shake": 2,
+      "bea_show_date": 6,
+      "email": 1000,
+      "equ_time_colour": 7
+    },
+    "enableMultiJS": true,
+    "displayName": "Equalizer",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Equalizer"
+}

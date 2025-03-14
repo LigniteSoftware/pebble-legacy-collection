@@ -1,0 +1,70 @@
+{
+  "version": "2.4.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "MENU_ICON",
+          "file": "menu_icon.png"
+        },
+        {
+          "type": "font",
+          "characterRegex": "[0-9]",
+          "name": "FONT_COLOURS_60",
+          "file": "colours.ttf"
+        },
+        {
+          "type": "font",
+          "characterRegex": "[0-9]",
+          "name": "FONT_COLOURS_62",
+          "file": "colours.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "3fabfdff-5f74-4bfb-8cfd-ac7a28df9aca",
+    "messageKeys": {
+      "col_constantanim": 4,
+      "col_default_width": 7,
+      "accessCode": 1001,
+      "ch_hour_colour": 10,
+      "col_border": 3,
+      "checksum": 1002,
+      "pebbleAccountToken": 6969,
+      "col_btrealert": 1,
+      "email": 1000,
+      "col_organize": 5,
+      "col_randomize": 6,
+      "ch_minute_colour": 9,
+      "col_btdisalert": 0
+    },
+    "enableMultiJS": true,
+    "displayName": "Colours",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "basalt"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Colours"
+}

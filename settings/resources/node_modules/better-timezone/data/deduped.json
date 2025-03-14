@@ -1,0 +1,1552 @@
+[
+  {
+    "iana": "Africa/Abidjan",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Accra",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Addis_Ababa",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Algiers",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Asmera",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Bamako",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Bangui",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Banjul",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Bissau",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Blantyre",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Brazzaville",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Bujumbura",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Cairo",
+    "name": "Egypt Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Africa/Casablanca",
+    "name": "Morocco Standard Time",
+    "abbr": "WET"
+  },
+  {
+    "iana": "Africa/Conakry",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Dakar",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Dar_es_Salaam",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Djibouti",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Douala",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/El_Aaiun",
+    "name": "Morocco Standard Time",
+    "abbr": "WET"
+  },
+  {
+    "iana": "Africa/Freetown",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Gaborone",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Harare",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Johannesburg",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Juba",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Kampala",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Khartoum",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Kigali",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Kinshasa",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Lagos",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Libreville",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Lome",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Luanda",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Lubumbashi",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Lusaka",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Malabo",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Maputo",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Maseru",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Mbabane",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Africa/Mogadishu",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Monrovia",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Nairobi",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Africa/Ndjamena",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Niamey",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Nouakchott",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Ouagadougou",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Porto-Novo",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Sao_Tome",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Africa/Tripoli",
+    "name": "Libya Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Africa/Tunis",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Africa/Windhoek",
+    "name": "Namibia Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "America/Anchorage",
+    "name": "Alaskan Standard Time",
+    "abbr": "AKST"
+  },
+  {
+    "iana": "America/Anguilla",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Antigua",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Aruba",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Asuncion",
+    "name": "Paraguay Standard Time",
+    "abbr": "PYT"
+  },
+  {
+    "iana": "America/Bahia",
+    "name": "Bahia Standard Time",
+    "abbr": "BAH"
+  },
+  {
+    "iana": "America/Barbados",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Belize",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Blanc-Sablon",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Bogota",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "America/Buenos_Aires",
+    "name": "Argentina Standard Time",
+    "abbr": "ART"
+  },
+  {
+    "iana": "America/Caracas",
+    "name": "Venezuela Standard Time",
+    "abbr": "VET"
+  },
+  {
+    "iana": "America/Cayenne",
+    "name": "SA Eastern Standard Time",
+    "abbr": "ART"
+  },
+  {
+    "iana": "America/Cayman",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "America/Chicago",
+    "name": "Central Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Chihuahua",
+    "name": "Mountain Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "America/Coral_Harbour",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "America/Costa_Rica",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Cuiaba",
+    "name": "Central Brazilian Standard Time",
+    "abbr": "BRT"
+  },
+  {
+    "iana": "America/Curacao",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Denver",
+    "name": "Mountain Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "America/Dominica",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/El_Salvador",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Godthab",
+    "name": "Greenland Standard Time",
+    "abbr": "WGT"
+  },
+  {
+    "iana": "America/Grand_Turk",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Grenada",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Guadeloupe",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Guatemala",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Guayaquil",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "America/Guyana",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Halifax",
+    "name": "Atlantic Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "America/Havana",
+    "name": "Eastern Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "America/Hermosillo",
+    "name": "Mountain Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "America/Indianapolis",
+    "name": "Eastern Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "America/Jamaica",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "America/Kralendijk",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/La_Paz",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Lima",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "America/Los_Angeles",
+    "name": "Pacific Standard Time",
+    "abbr": "PST"
+  },
+  {
+    "iana": "America/Lower_Princes",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Managua",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Marigot",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Martinique",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Matamoros",
+    "name": "Central Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Mexico_City",
+    "name": "Central Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Montevideo",
+    "name": "Montevideo Standard Time",
+    "abbr": "UYT"
+  },
+  {
+    "iana": "America/Montserrat",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Nassau",
+    "name": "Eastern Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "America/New_York",
+    "name": "Eastern Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "America/Ojinaga",
+    "name": "Mountain Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "America/Panama",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "America/Paramaribo",
+    "name": "SA Eastern Standard Time",
+    "abbr": "ART"
+  },
+  {
+    "iana": "America/Phoenix",
+    "name": "Mountain Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "America/Port-au-Prince",
+    "name": "Eastern Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "America/Port_of_Spain",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Puerto_Rico",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Regina",
+    "name": "Canada Central Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Santa_Isabel",
+    "name": "Pacific Standard Time",
+    "abbr": "PST"
+  },
+  {
+    "iana": "America/Santiago",
+    "name": "Pacific SA Standard Time",
+    "abbr": "CLT"
+  },
+  {
+    "iana": "America/Santo_Domingo",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Sao_Paulo",
+    "name": "E. South America Standard Time",
+    "abbr": "UYT"
+  },
+  {
+    "iana": "America/Scoresbysund",
+    "name": "Azores Standard Time",
+    "abbr": "AZOST"
+  },
+  {
+    "iana": "America/St_Barthelemy",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/St_Johns",
+    "name": "Newfoundland Standard Time",
+    "abbr": "NST"
+  },
+  {
+    "iana": "America/St_Kitts",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/St_Lucia",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/St_Thomas",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/St_Vincent",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Tegucigalpa",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "America/Thule",
+    "name": "Atlantic Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "America/Tijuana",
+    "name": "Pacific Standard Time",
+    "abbr": "PST"
+  },
+  {
+    "iana": "America/Tortola",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "America/Vancouver",
+    "name": "Pacific Standard Time",
+    "abbr": "PST"
+  },
+  {
+    "iana": "America/Winnipeg",
+    "name": "Central Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Antarctica/Casey",
+    "name": "W. Australia Standard Time",
+    "abbr": "CWST"
+  },
+  {
+    "iana": "Antarctica/Davis",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Antarctica/DumontDUrville",
+    "name": "West Pacific Standard Time",
+    "abbr": "ChST"
+  },
+  {
+    "iana": "Antarctica/Macquarie",
+    "name": "Central Pacific Standard Time",
+    "abbr": "MAGT"
+  },
+  {
+    "iana": "Antarctica/Mawson",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Antarctica/McMurdo",
+    "name": "New Zealand Standard Time",
+    "abbr": "NZST"
+  },
+  {
+    "iana": "Antarctica/Palmer",
+    "name": "Pacific SA Standard Time",
+    "abbr": "CLT"
+  },
+  {
+    "iana": "Antarctica/Rothera",
+    "name": "SA Eastern Standard Time",
+    "abbr": "ART"
+  },
+  {
+    "iana": "Antarctica/Syowa",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Antarctica/Vostok",
+    "name": "Central Asia Standard Time",
+    "abbr": "ALMT"
+  },
+  {
+    "iana": "Arctic/Longyearbyen",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Asia/Aden",
+    "name": "Arab Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Asia/Almaty",
+    "name": "Central Asia Standard Time",
+    "abbr": "ALMT"
+  },
+  {
+    "iana": "Asia/Almaty Asia/Qyzylorda",
+    "name": "Central Asia Standard Time",
+    "abbr": "ALMT"
+  },
+  {
+    "iana": "Asia/Amman",
+    "name": "Jordan Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Asia/Ashgabat",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Asia/Baghdad",
+    "name": "Arabic Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Asia/Bahrain",
+    "name": "Arab Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Asia/Baku",
+    "name": "Azerbaijan Standard Time",
+    "abbr": "AZT"
+  },
+  {
+    "iana": "Asia/Bangkok",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Asia/Beirut",
+    "name": "Middle East Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Asia/Bishkek",
+    "name": "Central Asia Standard Time",
+    "abbr": "ALMT"
+  },
+  {
+    "iana": "Asia/Brunei",
+    "name": "Singapore Standard Time",
+    "abbr": "SST"
+  },
+  {
+    "iana": "Asia/Calcutta",
+    "name": "India Standard Time",
+    "abbr": "IST"
+  },
+  {
+    "iana": "Asia/Colombo",
+    "name": "Sri Lanka Standard Time",
+    "abbr": "IST"
+  },
+  {
+    "iana": "Asia/Damascus",
+    "name": "Syria Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Asia/Dhaka",
+    "name": "Bangladesh Standard Time",
+    "abbr": "BST"
+  },
+  {
+    "iana": "Asia/Dili",
+    "name": "Tokyo Standard Time",
+    "abbr": "JST"
+  },
+  {
+    "iana": "Asia/Dubai",
+    "name": "Arabian Standard Time",
+    "abbr": "GST"
+  },
+  {
+    "iana": "Asia/Dushanbe",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Asia/Hong_Kong",
+    "name": "China Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Asia/Hovd",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Asia/Irkutsk",
+    "name": "North Asia East Standard Time",
+    "abbr": "IRKT"
+  },
+  {
+    "iana": "Asia/Jakarta",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Asia/Jayapura",
+    "name": "Tokyo Standard Time",
+    "abbr": "JST"
+  },
+  {
+    "iana": "Asia/Jerusalem",
+    "name": "Israel Standard Time",
+    "abbr": "IST"
+  },
+  {
+    "iana": "Asia/Kabul",
+    "name": "Afghanistan Standard Time",
+    "abbr": "AFT"
+  },
+  {
+    "iana": "Asia/Karachi",
+    "name": "Pakistan Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Asia/Katmandu",
+    "name": "Nepal Standard Time",
+    "abbr": "NPT"
+  },
+  {
+    "iana": "Asia/Krasnoyarsk",
+    "name": "North Asia Standard Time",
+    "abbr": "KRAT"
+  },
+  {
+    "iana": "Asia/Kuala_Lumpur",
+    "name": "Singapore Standard Time",
+    "abbr": "SST"
+  },
+  {
+    "iana": "Asia/Kuwait",
+    "name": "Arab Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Asia/Macau",
+    "name": "China Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Asia/Magadan",
+    "name": "Magadan Standard Time",
+    "abbr": "MAGT"
+  },
+  {
+    "iana": "Asia/Makassar",
+    "name": "Singapore Standard Time",
+    "abbr": "SST"
+  },
+  {
+    "iana": "Asia/Manila",
+    "name": "Singapore Standard Time",
+    "abbr": "SST"
+  },
+  {
+    "iana": "Asia/Muscat",
+    "name": "Arabian Standard Time",
+    "abbr": "GST"
+  },
+  {
+    "iana": "Asia/Nicosia",
+    "name": "GTB Standard Time",
+    "abbr": "GTB"
+  },
+  {
+    "iana": "Asia/Novosibirsk",
+    "name": "N. Central Asia Standard Time",
+    "abbr": "NOVT"
+  },
+  {
+    "iana": "Asia/Oral",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Asia/Phnom_Penh",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Asia/Pyongyang",
+    "name": "Korea Standard Time",
+    "abbr": "KST"
+  },
+  {
+    "iana": "Asia/Qatar",
+    "name": "Arab Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Asia/Rangoon",
+    "name": "Myanmar Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "Asia/Riyadh",
+    "name": "Arab Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Asia/Saigon",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Asia/Seoul",
+    "name": "Korea Standard Time",
+    "abbr": "KST"
+  },
+  {
+    "iana": "Asia/Shanghai",
+    "name": "China Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Asia/Singapore",
+    "name": "Singapore Standard Time",
+    "abbr": "SST"
+  },
+  {
+    "iana": "Asia/Taipei",
+    "name": "Taipei Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Asia/Tashkent",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Asia/Tbilisi",
+    "name": "Georgian Standard Time",
+    "abbr": "GET"
+  },
+  {
+    "iana": "Asia/Tehran",
+    "name": "Iran Standard Time",
+    "abbr": "IRST"
+  },
+  {
+    "iana": "Asia/Thimphu",
+    "name": "Bangladesh Standard Time",
+    "abbr": "BST"
+  },
+  {
+    "iana": "Asia/Tokyo",
+    "name": "Tokyo Standard Time",
+    "abbr": "JST"
+  },
+  {
+    "iana": "Asia/Ulaanbaatar",
+    "name": "Ulaanbaatar Standard Time",
+    "abbr": "ULAT"
+  },
+  {
+    "iana": "Asia/Urumqi",
+    "name": "Central Asia Standard Time",
+    "abbr": "ALMT"
+  },
+  {
+    "iana": "Asia/Vientiane",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Asia/Vladivostok",
+    "name": "Vladivostok Standard Time",
+    "abbr": "VLAT"
+  },
+  {
+    "iana": "Asia/Yakutsk",
+    "name": "Yakutsk Standard Time",
+    "abbr": "YAKT"
+  },
+  {
+    "iana": "Asia/Yekaterinburg",
+    "name": "Ekaterinburg Standard Time",
+    "abbr": "YEKT"
+  },
+  {
+    "iana": "Asia/Yerevan",
+    "name": "Caucasus Standard Time",
+    "abbr": "AMT"
+  },
+  {
+    "iana": "Atlantic/Azores",
+    "name": "Azores Standard Time",
+    "abbr": "AZOST"
+  },
+  {
+    "iana": "Atlantic/Bermuda",
+    "name": "Atlantic Standard Time",
+    "abbr": "AST"
+  },
+  {
+    "iana": "Atlantic/Canary",
+    "name": "GMT Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Atlantic/Cape_Verde",
+    "name": "Cape Verde Standard Time",
+    "abbr": "CVT"
+  },
+  {
+    "iana": "Atlantic/Faeroe",
+    "name": "GMT Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Atlantic/Reykjavik",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Atlantic/St_Helena",
+    "name": "Greenwich Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Atlantic/Stanley",
+    "name": "SA Eastern Standard Time",
+    "abbr": "ART"
+  },
+  {
+    "iana": "Australia/Adelaide",
+    "name": "Cen. Australia Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Australia/Brisbane",
+    "name": "E. Australia Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "Australia/Darwin",
+    "name": "AUS Central Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Australia/Hobart",
+    "name": "Tasmania Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "Australia/Perth",
+    "name": "W. Australia Standard Time",
+    "abbr": "CWST"
+  },
+  {
+    "iana": "Australia/Sydney",
+    "name": "AUS Eastern Standard Time",
+    "abbr": "EST"
+  },
+  {
+    "iana": "Etc/GMT+1",
+    "name": "Cape Verde Standard Time",
+    "abbr": "CVT"
+  },
+  {
+    "iana": "Etc/GMT+10",
+    "name": "Hawaiian Standard Time",
+    "abbr": "HAST"
+  },
+  {
+    "iana": "Etc/GMT+3",
+    "name": "SA Eastern Standard Time",
+    "abbr": "ART"
+  },
+  {
+    "iana": "Etc/GMT+4",
+    "name": "SA Western Standard Time",
+    "abbr": "BOT"
+  },
+  {
+    "iana": "Etc/GMT+5",
+    "name": "SA Pacific Standard Time",
+    "abbr": "COT"
+  },
+  {
+    "iana": "Etc/GMT+6",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Etc/GMT+7",
+    "name": "Mountain Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "Etc/GMT-1",
+    "name": "W. Central Africa Standard Time",
+    "abbr": "WAT"
+  },
+  {
+    "iana": "Etc/GMT-10",
+    "name": "West Pacific Standard Time",
+    "abbr": "ChST"
+  },
+  {
+    "iana": "Etc/GMT-11",
+    "name": "Central Pacific Standard Time",
+    "abbr": "MAGT"
+  },
+  {
+    "iana": "Etc/GMT-13",
+    "name": "Tonga Standard Time",
+    "abbr": "TOT"
+  },
+  {
+    "iana": "Etc/GMT-14",
+    "name": "Line Islands Standard Time",
+    "abbr": "LINT"
+  },
+  {
+    "iana": "Etc/GMT-2",
+    "name": "South Africa Standard Time",
+    "abbr": "SAST"
+  },
+  {
+    "iana": "Etc/GMT-3",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Etc/GMT-4",
+    "name": "Arabian Standard Time",
+    "abbr": "GST"
+  },
+  {
+    "iana": "Etc/GMT-5",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Etc/GMT-6",
+    "name": "Central Asia Standard Time",
+    "abbr": "ALMT"
+  },
+  {
+    "iana": "Etc/GMT-7",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Etc/GMT-8",
+    "name": "Singapore Standard Time",
+    "abbr": "SST"
+  },
+  {
+    "iana": "Etc/GMT-9",
+    "name": "Tokyo Standard Time",
+    "abbr": "JST"
+  },
+  {
+    "iana": "Europe/Amsterdam",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Andorra",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Athens",
+    "name": "GTB Standard Time",
+    "abbr": "GTB"
+  },
+  {
+    "iana": "Europe/Belgrade",
+    "name": "Central Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Berlin",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Bratislava",
+    "name": "Central Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Brussels",
+    "name": "Romance Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Bucharest",
+    "name": "GTB Standard Time",
+    "abbr": "GTB"
+  },
+  {
+    "iana": "Europe/Budapest",
+    "name": "Central Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Chisinau",
+    "name": "GTB Standard Time",
+    "abbr": "GTB"
+  },
+  {
+    "iana": "Europe/Copenhagen",
+    "name": "Romance Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Dublin",
+    "name": "GMT Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Europe/Gibraltar",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Guernsey",
+    "name": "GMT Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Europe/Helsinki",
+    "name": "FLE Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Isle_of_Man",
+    "name": "GMT Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Europe/Istanbul",
+    "name": "Turkey Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Jersey",
+    "name": "GMT Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Europe/Kaliningrad",
+    "name": "Kaliningrad Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Kiev",
+    "name": "FLE Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Ljubljana",
+    "name": "Central Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/London",
+    "name": "GMT Standard Time",
+    "abbr": "GMT"
+  },
+  {
+    "iana": "Europe/Luxembourg",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Malta",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Mariehamn",
+    "name": "FLE Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Minsk",
+    "name": "Kaliningrad Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Monaco",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Moscow",
+    "name": "Russian Standard Time",
+    "abbr": "MSK"
+  },
+  {
+    "iana": "Europe/Oslo",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Paris",
+    "name": "Romance Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Podgorica",
+    "name": "Central Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Prague",
+    "name": "Central Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Riga",
+    "name": "FLE Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Rome",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/San_Marino",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Sarajevo",
+    "name": "Central European Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Skopje",
+    "name": "Central European Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Sofia",
+    "name": "FLE Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Stockholm",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Tallinn",
+    "name": "FLE Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Tirane",
+    "name": "Central Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Vaduz",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Vatican",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Vienna",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Vilnius",
+    "name": "FLE Standard Time",
+    "abbr": "EET"
+  },
+  {
+    "iana": "Europe/Warsaw",
+    "name": "Central European Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Zagreb",
+    "name": "Central European Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Europe/Zurich",
+    "name": "W. Europe Standard Time",
+    "abbr": "CET"
+  },
+  {
+    "iana": "Indian/Antananarivo",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Indian/Chagos",
+    "name": "Central Asia Standard Time",
+    "abbr": "ALMT"
+  },
+  {
+    "iana": "Indian/Christmas",
+    "name": "SE Asia Standard Time",
+    "abbr": "ICT"
+  },
+  {
+    "iana": "Indian/Cocos",
+    "name": "Myanmar Standard Time",
+    "abbr": "MST"
+  },
+  {
+    "iana": "Indian/Comoro",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Indian/Kerguelen",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Indian/Mahe",
+    "name": "Mauritius Standard Time",
+    "abbr": "MUT"
+  },
+  {
+    "iana": "Indian/Maldives",
+    "name": "West Asia Standard Time",
+    "abbr": "PKT"
+  },
+  {
+    "iana": "Indian/Mauritius",
+    "name": "Mauritius Standard Time",
+    "abbr": "MUT"
+  },
+  {
+    "iana": "Indian/Mayotte",
+    "name": "E. Africa Standard Time",
+    "abbr": "EAT"
+  },
+  {
+    "iana": "Indian/Reunion",
+    "name": "Mauritius Standard Time",
+    "abbr": "MUT"
+  },
+  {
+    "iana": "Pacific/Apia",
+    "name": "Samoa Standard Time",
+    "abbr": "SST"
+  },
+  {
+    "iana": "Pacific/Auckland",
+    "name": "New Zealand Standard Time",
+    "abbr": "NZST"
+  },
+  {
+    "iana": "Pacific/Efate",
+    "name": "Central Pacific Standard Time",
+    "abbr": "MAGT"
+  },
+  {
+    "iana": "Pacific/Enderbury",
+    "name": "Tonga Standard Time",
+    "abbr": "TOT"
+  },
+  {
+    "iana": "Pacific/Fakaofo",
+    "name": "Tonga Standard Time",
+    "abbr": "TOT"
+  },
+  {
+    "iana": "Pacific/Fiji",
+    "name": "Fiji Standard Time",
+    "abbr": "FJT"
+  },
+  {
+    "iana": "Pacific/Galapagos",
+    "name": "Central America Standard Time",
+    "abbr": "CST"
+  },
+  {
+    "iana": "Pacific/Guadalcanal",
+    "name": "Central Pacific Standard Time",
+    "abbr": "MAGT"
+  },
+  {
+    "iana": "Pacific/Guam",
+    "name": "West Pacific Standard Time",
+    "abbr": "ChST"
+  },
+  {
+    "iana": "Pacific/Honolulu",
+    "name": "Hawaiian Standard Time",
+    "abbr": "HAST"
+  },
+  {
+    "iana": "Pacific/Johnston",
+    "name": "Hawaiian Standard Time",
+    "abbr": "HAST"
+  },
+  {
+    "iana": "Pacific/Kiritimati",
+    "name": "Line Islands Standard Time",
+    "abbr": "LINT"
+  },
+  {
+    "iana": "Pacific/Noumea",
+    "name": "Central Pacific Standard Time",
+    "abbr": "MAGT"
+  },
+  {
+    "iana": "Pacific/Palau",
+    "name": "Tokyo Standard Time",
+    "abbr": "JST"
+  },
+  {
+    "iana": "Pacific/Port_Moresby",
+    "name": "West Pacific Standard Time",
+    "abbr": "ChST"
+  },
+  {
+    "iana": "Pacific/Rarotonga",
+    "name": "Hawaiian Standard Time",
+    "abbr": "HAST"
+  },
+  {
+    "iana": "Pacific/Saipan",
+    "name": "West Pacific Standard Time",
+    "abbr": "ChST"
+  },
+  {
+    "iana": "Pacific/Tahiti",
+    "name": "Hawaiian Standard Time",
+    "abbr": "HAST"
+  },
+  {
+    "iana": "Pacific/Tongatapu",
+    "name": "Tonga Standard Time",
+    "abbr": "TOT"
+  },
+  {
+    "iana": "Pacific/Truk",
+    "name": "West Pacific Standard Time",
+    "abbr": "ChST"
+  }
+]

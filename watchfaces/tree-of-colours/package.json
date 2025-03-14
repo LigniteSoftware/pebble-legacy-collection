@@ -1,0 +1,60 @@
+{
+  "version": "2.6.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_24",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "234e1842-d715-481c-9e04-7846d2c5b20c",
+    "messageKeys": {
+      "tre_branch_width": 4,
+      "tre_btdisalert": 0,
+      "tre_btrealert": 1,
+      "checksum": 1002,
+      "pebbleAccountToken": 6969,
+      "gs_date_format": 2000,
+      "accessCode": 1001,
+      "tre_circle_colour": 10,
+      "tre_randomize": 3,
+      "tre_cust_colour_1": 6,
+      "tre_cust_colour_2": 7,
+      "tre_cust_colour_3": 8,
+      "email": 1000,
+      "tre_time_colour": 11
+    },
+    "enableMultiJS": true,
+    "displayName": "Tree of Colours",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Tree of Colours"
+}

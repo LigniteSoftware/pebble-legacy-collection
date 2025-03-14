@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+Hey there, hope you've enjoyed snooping around. Below you're going to find some of the worst code
+I've ever written in my life. Trust me, I know it's bad.
+
+I wrote this many years ago when I was a novice developer with no web development experience. So bear with me ;)
+
+-Edwin Finch
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Lignite Settings</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" charset="utf-8"></script>
+
+    <!-- Bootstrap -->
+    <link href="../resources/css/bootstrap.css" rel="stylesheet">
+    <link href="../resources/css/lignitestyles.css" rel="stylesheet">
+
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="../resources/css/font-awesome.min.css">
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73640245-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script type='text/javascript'>
+        //<![CDATA[
+        $(window).load(function() { <!--  www.j  a  v  a 2 s. com-->
+            $('.btn[data-radio-name]').click(function() {
+                $('.btn[data-radio-name="' + $(this).data('radioName') + '"]').removeClass('active');
+                $('input[name="' + $(this).data('radioName') + '"]').val(
+                    $(this).text()
+                );
+            });
+            $('.btn[data-checkbox-name]').click(function() {
+                $('input[name="' + $(this).data('checkboxName') + '"]').val(
+                    $(this).hasClass('active') ? 0 : 1
+                );
+            });
+        }); //]]>
+    </script>
+    <!-- SLIDER -->
+
+    <link rel="stylesheet" href="../resources/css/owl.carousel.css">
+    <link rel="stylesheet" href="../resources/css/owl.theme.css">
+
+    <style>
+        img {
+            max-width: 100%;
+            /* This rule is very important for cropperjs apparently */
+        }
+        /* https:/../resources/css-tricks.com/snippets../resources/css/prevent-long-urls-from-breaking-out-of-container/ */
+
+        .dont-break-out {
+            /* These are technically the same, but use both */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            /* This is the dangerous one in WebKit, as it breaks things wherever */
+            word-break: break-all;
+            /* Instead use this non-standard one: */
+            word-break: break-word;
+            /* Adds a hyphen where the word breaks, if supported (No Blink) */
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="spacer20"></div>
+
+        <!--<div class="text-left"><a href="#"><img class="lignitelogo" src="../resources/img/logo.png" width="100px" height="67px"></a></div>
+<div class="text-left"><a href="#"><img class="lignitelogo" src="../resources/img/logo.jpg" width="297px" height="201px"></a></div>-->
+        <div class="text-center">
+            <a href="#">
+                <img src="../resources/img/logo-slogan.png" width="159px" height="86px" class="img-responsive center-block lignitelogo" />
+            </a>
+            <div class="spacer10"></div>
+            <p>Server-Free Edition</p>
+        </div>
+
+        <div class="spacer20"></div>
+
+        <div class="spacer20"></div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" id="watchface_settings_title">
+                            <span class="glyphicon glyphicon-time">
+                            </span>Watchface Settings</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div id="main">
+                        <div class="form-group">
+                            <div class="panel-body" id="why_are_you_checking_out_our_code_mate">
+                                <div class="row" id="content">
+                                    <div style="margin:20px;box-sizing: border-box;background:#EEE;" id="liveSettingsWarningBox">
+                                        <div style="margin:20px;padding:10px;">
+                                            <h3>Live settings no longer work.</h3>
+                                            <p>You must tap "Save Changes" below to save your changes.</h1>
+                                                <p><a onclick="dismissLiveSettingsWarning()">Dismiss</a></p>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="panel-heading">General</div>
+                                    <ul class="list-group" id="switches_pref_header_general" style="display: inline;">
+                                        <li class="list-group-item" id="liforbtdisalert">Bluetooth disconnect alert
+                                            <div class="material-switch pull-right"><input id="btdisalert" name="btdisalert" type="checkbox" class="liveconfig ligniteToggle"><label for="btdisalert" class="label-success"></label></div>
+                                        </li>
+                                        <li class="list-group-item" id="liforbtrealert">Bluetooth reconnect alert
+                                            <div class="material-switch pull-right"><input id="btrealert" name="btrealert" type="checkbox" class="liveconfig ligniteToggle"><label for="btrealert" class="label-success"></label></div>
+                                        </li>
+                                    </ul>
+                                    <div class="panel-body" id="body_pref_header_general">
+                                        <div class="row">
+                                            <div class="col-md-12"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-heading">Weather</div>
+                                    <ul class="list-group" id="switches_pref_header_weather" style="display: inline;">
+                                        <li class="list-group-item" id="liforweather">Weather
+                                            <div class="material-switch pull-right"><input id="weather" name="weather" type="checkbox" class="liveconfig ligniteToggle"><label for="weather" class="label-success"></label></div>
+                                        </li>
+                                        <li class="list-group-item" id="liforuse_celsius">Celsius
+                                            <div class="material-switch pull-right"><input id="use_celsius" name="use_celsius" type="checkbox" class="liveconfig ligniteToggle"><label for="use_celsius" class="label-success"></label></div>
+                                        </li>
+                                    </ul>
+                                    <div class="panel-body" id="body_pref_header_weather">
+                                        <div class="row">
+                                            <div class="col-md-12"></div>
+                                        </div>
+                                        <div class="form-group"><label for="grant1">Custom location</label><input type="text" class="form-control liveconfig ligniteTextField" id="custom_location" placeholder="Enter a custom location" required=""></div>
+                                    </div>
+                                    <div class="panel-heading">Look and Feel</div>
+                                    <ul class="list-group" id="switches_pref_title_lookandfeel" style="display: inline;">
+                                        <li class="list-group-item" id="liforday">Day
+                                            <div class="material-switch pull-right"><input id="day" name="day" type="checkbox" class="liveconfig ligniteToggle"><label for="day" class="label-success"></label></div>
+                                        </li>
+                                        <li class="list-group-item" id="lifordate">Date
+                                            <div class="material-switch pull-right"><input id="date" name="date" type="checkbox" class="liveconfig ligniteToggle"><label for="date" class="label-success"></label></div>
+                                        </li>
+                                        <li class="list-group-item" id="liforbattery_bar">Battery bar
+                                            <div class="material-switch pull-right"><input id="battery_bar" name="battery_bar" type="checkbox" class="liveconfig ligniteToggle"><label for="battery_bar" class="label-success"></label></div>
+                                        </li>
+                                    </ul>
+                                    <div class="panel-body" id="body_pref_title_lookandfeel">
+                                        <div class="row">
+                                            <div class="col-md-12"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-heading">Colours</div>
+                                    <ul class="list-group" id="switches_pref_header_colours" style="display:none;"></ul>
+                                    <div class="panel-body" id="body_pref_header_colours">
+                                        <div class="row">
+                                            <div class="col-md-12"></div>
+                                        </div>
+                                        <div><input id="selected_colour_accent" type="hidden" value="#000000"></div>
+                                        <a class="btn btn-lg btn-default btn-block collapsed liveconfig ligniteColour" data-toggle="collapse" href="#accent" id="accent_click" style="background-color: rgb(0, 0, 0);"><span class="if-collapsed" style="color:#FFFFFF" id="accent_span_closed"><i class="fa fa-paint-brush"></i> Accent Colour</span><span class="if-not-collapsed" id="accent_span_open" style="color: rgb(255, 255, 255);"><i class="fa fa-paint-brush"></i> Accent Colour</span></a>
+                                        <style>
+                                            [data-toggle="collapse"].collapsed .if-not-collapsed {
+                                                display: none;
+                                            }
+
+                                            [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+                                                display: none;
+                                            }
+                                        </style>
+                                        <div class="collapse bootstrap-colorpalette" id="accent">
+                                            <div><button type="button" class="btn-color" style="background-color:#000000" data-value="#000000" title="#000000"></button><button type="button" class="btn-color" style="background-color:#ffaaaa" data-value="#ffaaaa"
+                                                    title="#ffaaaa"></button><button type="button" class="btn-color" style="background-color:#ff5555" data-value="#ff5555" title="#ff5555"></button><button type="button" class="btn-color" style="background-color:#ff0000"
+                                                    data-value="#ff0000" title="#ff0000"></button><button type="button" class="btn-color" style="background-color:#ffffff" data-value="#ffffff" title="#ffffff"></button><button type="button" class="btn-color"
+                                                    style="background-color:#aaaaaa" data-value="#aaaaaa" title="#aaaaaa"></button><button type="button" class="btn-color" style="background-color:#aa5555" data-value="#aa5555" title="#aa5555"></button>
+                                                <button
+                                                    type="button" class="btn-color" style="background-color:#aa0000" data-value="#aa0000" title="#aa0000"></button><button type="button" class="btn-color" style="background-color:#555555" data-value="#555555" title="#555555"></button><button type="button" class="btn-color" style="background-color:#550000" data-value="#550000"
+                                                        title="#550000"></button><button type="button" class="btn-color" style="background-color:#ff5500" data-value="#ff5500" title="#ff5500"></button><button type="button" class="btn-color" style="background-color:#ffaa55"
+                                                        data-value="#ffaa55" title="#ffaa55"></button><button type="button" class="btn-color" style="background-color:#aa5500" data-value="#aa5500" title="#aa5500"></button><button type="button" class="btn-color"
+                                                        style="background-color:#ffaa00" data-value="#ffaa00" title="#ffaa00"></button><button type="button" class="btn-color" style="background-color:#ffffaa" data-value="#ffffaa" title="#ffffaa"></button>
+                                                    <button
+                                                        type="button" class="btn-color" style="background-color:#555500" data-value="#555500" title="#555500"></button><button type="button" class="btn-color" style="background-color:#ffff00" data-value="#ffff00" title="#ffff00"></button><button type="button" class="btn-color" style="background-color:#ffff55"
+                                                            data-value="#ffff55" title="#ffff55"></button><button type="button" class="btn-color" style="background-color:#aaaa00" data-value="#aaaa00" title="#aaaa00"></button><button type="button" class="btn-color"
+                                                            style="background-color:#aaaa55" data-value="#aaaa55" title="#aaaa55"></button><button type="button" class="btn-color" style="background-color:#aaff00" data-value="#aaff00" title="#aaff00"></button>
+                                                        <button
+                                                            type="button" class="btn-color" style="background-color:#55aa00" data-value="#55aa00" title="#55aa00"></button><button type="button" class="btn-color" style="background-color:#aaff55" data-value="#aaff55" title="#aaff55"></button><button type="button" class="btn-color" style="background-color:#55ff00"
+                                                                data-value="#55ff00" title="#55ff00"></button><button type="button" class="btn-color" style="background-color:#55aa55" data-value="#55aa55" title="#55aa55"></button><button type="button" class="btn-color"
+                                                                style="background-color:#55ff55" data-value="#55ff55" title="#55ff55"></button><button type="button" class="btn-color" style="background-color:#aaffaa" data-value="#aaffaa" title="#aaffaa"></button>
+                                                            <button
+                                                                type="button" class="btn-color" style="background-color:#00ff00" data-value="#00ff00" title="#00ff00"></button><button type="button" class="btn-color" style="background-color:#005500" data-value="#005500" title="#005500"></button><button type="button" class="btn-color" style="background-color:#00aa00"
+                                                                    data-value="#00aa00" title="#00aa00"></button><button type="button" class="btn-color" style="background-color:#00ff55" data-value="#00ff55" title="#00ff55"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#55ffaa" data-value="#55ffaa" title="#55ffaa"></button><button type="button" class="btn-color" style="background-color:#00aa55" data-value="#00aa55"
+                                                                    title="#00aa55"></button><button type="button" class="btn-color" style="background-color:#00ffaa" data-value="#00ffaa" title="#00ffaa"></button><button type="button" class="btn-color" style="background-color:#005555"
+                                                                    data-value="#005555" title="#005555"></button><button type="button" class="btn-color" style="background-color:#00ffff" data-value="#00ffff" title="#00ffff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#55aaaa" data-value="#55aaaa" title="#55aaaa"></button><button type="button" class="btn-color" style="background-color:#55ffff" data-value="#55ffff"
+                                                                    title="#55ffff"></button><button type="button" class="btn-color" style="background-color:#aaffff" data-value="#aaffff" title="#aaffff"></button><button type="button" class="btn-color" style="background-color:#00aaaa"
+                                                                    data-value="#00aaaa" title="#00aaaa"></button><button type="button" class="btn-color" style="background-color:#55aaff" data-value="#55aaff" title="#55aaff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#0055aa" data-value="#0055aa" title="#0055aa"></button><button type="button" class="btn-color" style="background-color:#0055ff" data-value="#0055ff"
+                                                                    title="#0055ff"></button><button type="button" class="btn-color" style="background-color:#0000aa" data-value="#0000aa" title="#0000aa"></button><button type="button" class="btn-color" style="background-color:#5555ff"
+                                                                    data-value="#5555ff" title="#5555ff"></button><button type="button" class="btn-color" style="background-color:#0000ff" data-value="#0000ff" title="#0000ff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#aaaaff" data-value="#aaaaff" title="#aaaaff"></button><button type="button" class="btn-color" style="background-color:#5555aa" data-value="#5555aa"
+                                                                    title="#5555aa"></button><button type="button" class="btn-color" style="background-color:#000055" data-value="#000055" title="#000055"></button><button type="button" class="btn-color" style="background-color:#0000ff"
+                                                                    data-value="#0000ff" title="#0000ff"></button><button type="button" class="btn-color" style="background-color:#5500ff" data-value="#5500ff" title="#5500ff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#aa55ff" data-value="#aa55ff" title="#aa55ff"></button><button type="button" class="btn-color" style="background-color:#5500aa" data-value="#5500aa"
+                                                                    title="#5500aa"></button><button type="button" class="btn-color" style="background-color:#aa00ff" data-value="#aa00ff" title="#aa00ff"></button><button type="button" class="btn-color" style="background-color:#aa00aa"
+                                                                    data-value="#aa00aa" title="#aa00aa"></button><button type="button" class="btn-color" style="background-color:#ff55ff" data-value="#ff55ff" title="#ff55ff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#ff00ff" data-value="#ff00ff" title="#ff00ff"></button><button type="button" class="btn-color" style="background-color:#550055" data-value="#550055"
+                                                                    title="#550055"></button><button type="button" class="btn-color" style="background-color:#aa55aa" data-value="#aa55aa" title="#aa55aa"></button><button type="button" class="btn-color" style="background-color:#ffaaff"
+                                                                    data-value="#ffaaff" title="#ffaaff"></button><button type="button" class="btn-color" style="background-color:#ff00aa" data-value="#ff00aa" title="#ff00aa"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#ff55aa" data-value="#ff55aa" title="#ff55aa"></button><button type="button" class="btn-color" style="background-color:#aa0055" data-value="#aa0055"
+                                                                    title="#aa0055"></button><button type="button" class="btn-color" style="background-color:#ff0055" data-value="#ff0055" title="#ff0055"></button></div>
+                                        </div>
+                                        <div><input id="selected_colour_background_colour" type="hidden" value="#000000"></div><a class="btn btn-lg btn-default btn-block collapsed liveconfig ligniteColour" data-toggle="collapse" href="#background_colour" id="background_colour_click"
+                                            style="background-color: rgb(0, 0, 0);"><span class="if-collapsed" style="color:#FFFFFF" id="background_colour_span_closed"><i class="fa fa-paint-brush"></i> Background</span><span class="if-not-collapsed" id="background_colour_span_open" style="color: rgb(255, 255, 255);"><i class="fa fa-paint-brush"></i> Background</span></a>
+                                        <style>
+                                            [data-toggle="collapse"].collapsed .if-not-collapsed {
+                                                display: none;
+                                            }
+
+                                            [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+                                                display: none;
+                                            }
+                                        </style>
+                                        <div class="collapse bootstrap-colorpalette" id="background_colour">
+                                            <div><button type="button" class="btn-color" style="background-color:#000000" data-value="#000000" title="#000000"></button><button type="button" class="btn-color" style="background-color:#ffaaaa" data-value="#ffaaaa"
+                                                    title="#ffaaaa"></button><button type="button" class="btn-color" style="background-color:#ff5555" data-value="#ff5555" title="#ff5555"></button><button type="button" class="btn-color" style="background-color:#ff0000"
+                                                    data-value="#ff0000" title="#ff0000"></button><button type="button" class="btn-color" style="background-color:#ffffff" data-value="#ffffff" title="#ffffff"></button><button type="button" class="btn-color"
+                                                    style="background-color:#aaaaaa" data-value="#aaaaaa" title="#aaaaaa"></button><button type="button" class="btn-color" style="background-color:#aa5555" data-value="#aa5555" title="#aa5555"></button>
+                                                <button
+                                                    type="button" class="btn-color" style="background-color:#aa0000" data-value="#aa0000" title="#aa0000"></button><button type="button" class="btn-color" style="background-color:#555555" data-value="#555555" title="#555555"></button><button type="button" class="btn-color" style="background-color:#550000" data-value="#550000"
+                                                        title="#550000"></button><button type="button" class="btn-color" style="background-color:#ff5500" data-value="#ff5500" title="#ff5500"></button><button type="button" class="btn-color" style="background-color:#ffaa55"
+                                                        data-value="#ffaa55" title="#ffaa55"></button><button type="button" class="btn-color" style="background-color:#aa5500" data-value="#aa5500" title="#aa5500"></button><button type="button" class="btn-color"
+                                                        style="background-color:#ffaa00" data-value="#ffaa00" title="#ffaa00"></button><button type="button" class="btn-color" style="background-color:#ffffaa" data-value="#ffffaa" title="#ffffaa"></button>
+                                                    <button
+                                                        type="button" class="btn-color" style="background-color:#555500" data-value="#555500" title="#555500"></button><button type="button" class="btn-color" style="background-color:#ffff00" data-value="#ffff00" title="#ffff00"></button><button type="button" class="btn-color" style="background-color:#ffff55"
+                                                            data-value="#ffff55" title="#ffff55"></button><button type="button" class="btn-color" style="background-color:#aaaa00" data-value="#aaaa00" title="#aaaa00"></button><button type="button" class="btn-color"
+                                                            style="background-color:#aaaa55" data-value="#aaaa55" title="#aaaa55"></button><button type="button" class="btn-color" style="background-color:#aaff00" data-value="#aaff00" title="#aaff00"></button>
+                                                        <button
+                                                            type="button" class="btn-color" style="background-color:#55aa00" data-value="#55aa00" title="#55aa00"></button><button type="button" class="btn-color" style="background-color:#aaff55" data-value="#aaff55" title="#aaff55"></button><button type="button" class="btn-color" style="background-color:#55ff00"
+                                                                data-value="#55ff00" title="#55ff00"></button><button type="button" class="btn-color" style="background-color:#55aa55" data-value="#55aa55" title="#55aa55"></button><button type="button" class="btn-color"
+                                                                style="background-color:#55ff55" data-value="#55ff55" title="#55ff55"></button><button type="button" class="btn-color" style="background-color:#aaffaa" data-value="#aaffaa" title="#aaffaa"></button>
+                                                            <button
+                                                                type="button" class="btn-color" style="background-color:#00ff00" data-value="#00ff00" title="#00ff00"></button><button type="button" class="btn-color" style="background-color:#005500" data-value="#005500" title="#005500"></button><button type="button" class="btn-color" style="background-color:#00aa00"
+                                                                    data-value="#00aa00" title="#00aa00"></button><button type="button" class="btn-color" style="background-color:#00ff55" data-value="#00ff55" title="#00ff55"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#55ffaa" data-value="#55ffaa" title="#55ffaa"></button><button type="button" class="btn-color" style="background-color:#00aa55" data-value="#00aa55"
+                                                                    title="#00aa55"></button><button type="button" class="btn-color" style="background-color:#00ffaa" data-value="#00ffaa" title="#00ffaa"></button><button type="button" class="btn-color" style="background-color:#005555"
+                                                                    data-value="#005555" title="#005555"></button><button type="button" class="btn-color" style="background-color:#00ffff" data-value="#00ffff" title="#00ffff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#55aaaa" data-value="#55aaaa" title="#55aaaa"></button><button type="button" class="btn-color" style="background-color:#55ffff" data-value="#55ffff"
+                                                                    title="#55ffff"></button><button type="button" class="btn-color" style="background-color:#aaffff" data-value="#aaffff" title="#aaffff"></button><button type="button" class="btn-color" style="background-color:#00aaaa"
+                                                                    data-value="#00aaaa" title="#00aaaa"></button><button type="button" class="btn-color" style="background-color:#55aaff" data-value="#55aaff" title="#55aaff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#0055aa" data-value="#0055aa" title="#0055aa"></button><button type="button" class="btn-color" style="background-color:#0055ff" data-value="#0055ff"
+                                                                    title="#0055ff"></button><button type="button" class="btn-color" style="background-color:#0000aa" data-value="#0000aa" title="#0000aa"></button><button type="button" class="btn-color" style="background-color:#5555ff"
+                                                                    data-value="#5555ff" title="#5555ff"></button><button type="button" class="btn-color" style="background-color:#0000ff" data-value="#0000ff" title="#0000ff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#aaaaff" data-value="#aaaaff" title="#aaaaff"></button><button type="button" class="btn-color" style="background-color:#5555aa" data-value="#5555aa"
+                                                                    title="#5555aa"></button><button type="button" class="btn-color" style="background-color:#000055" data-value="#000055" title="#000055"></button><button type="button" class="btn-color" style="background-color:#0000ff"
+                                                                    data-value="#0000ff" title="#0000ff"></button><button type="button" class="btn-color" style="background-color:#5500ff" data-value="#5500ff" title="#5500ff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#aa55ff" data-value="#aa55ff" title="#aa55ff"></button><button type="button" class="btn-color" style="background-color:#5500aa" data-value="#5500aa"
+                                                                    title="#5500aa"></button><button type="button" class="btn-color" style="background-color:#aa00ff" data-value="#aa00ff" title="#aa00ff"></button><button type="button" class="btn-color" style="background-color:#aa00aa"
+                                                                    data-value="#aa00aa" title="#aa00aa"></button><button type="button" class="btn-color" style="background-color:#ff55ff" data-value="#ff55ff" title="#ff55ff"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#ff00ff" data-value="#ff00ff" title="#ff00ff"></button><button type="button" class="btn-color" style="background-color:#550055" data-value="#550055"
+                                                                    title="#550055"></button><button type="button" class="btn-color" style="background-color:#aa55aa" data-value="#aa55aa" title="#aa55aa"></button><button type="button" class="btn-color" style="background-color:#ffaaff"
+                                                                    data-value="#ffaaff" title="#ffaaff"></button><button type="button" class="btn-color" style="background-color:#ff00aa" data-value="#ff00aa" title="#ff00aa"></button><button type="button"
+                                                                    class="btn-color" style="background-color:#ff55aa" data-value="#ff55aa" title="#ff55aa"></button><button type="button" class="btn-color" style="background-color:#aa0055" data-value="#aa0055"
+                                                                    title="#aa0055"></button><button type="button" class="btn-color" style="background-color:#ff0055" data-value="#ff0055" title="#ff0055"></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="modal fade" id="cropImageDiv" tabindex="-1" role="dialog" aria-labelledby="cropImageLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <p id="cropImageText" class="text-center">Please wait while your photo loads...</p>
+                                                <div>
+                                                    <img src="" class="img-responsive" id="cropImage">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer" id="saveButtonDiv">
+                                                <button type="button" class="btn btn-default" title="Rotate Left" onclick="rotateImageLeft()">
+                                                    <span class="docs-tooltip" data-toggle="tooltip">
+                                                      <span class="fa fa-rotate-left"></span>
+                                                    </span>
+                                                  </button>
+                                                <button type="button" class="btn btn-default" title="Rotate Right" onclick="rotateImageRight()">
+                                                    <span class="docs-tooltip" data-toggle="tooltip">
+                                                      <span class="fa fa-rotate-right"></span>
+                                                    </span>
+                                                  </button>
+                                                <button type="button" class="btn btn-default" id="cancelCropButton" onclick="cancelCrop()">Cancel</button>
+                                                <button type="button" class="btn btn-success" id="saveCropButton" onclick="saveCrop()">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" data-toggle="modal" data-target="#cropImageDiv" id="openCropperButton" hidden="">Open cropper</a>
+
+                                <div class="spacer20"></div>
+
+                                <button type="button" id="submit" name="submit" class="btn btn-lg btn-success btn-block">Save Changes</button>
+
+                                <div class="spacer20"></div>
+                                <button type="button" id="resetToDefaults" name="resetToDefaults" onclick="resetToDefaults()" class="btn btn-lg btn-default btn-block">Reset to Default Settings</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        About Lignite
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>
+                                    <img src="../resources/img/us.png" alt="Philipp and Edwin" width="1080px" height="834px" class="img-responsive center-block">
+                                </p>
+                                <h3>Hey Pebbler!</h3>
+
+                                <p>Lignite is a software development company made in Canada & Switzerland, by Edwin Finch & Philipp Weder (Edwin is on the right in the photo).</p>
+
+                                <p>We began our adventures on Pebble, creating dozens upon dozens of watchfaces for all four Pebbles.</p>
+
+                                <p>We have now moved on to creating watchfaces for Fitbit and a music app for iOS, Apple Watch and iPad.</p>
+
+                                <p>You can check out our stuff at <a href="https://www.Lignite.io">www.Lignite.io</a>.</p>
+
+                                <p style="font-size:125%;"><b>Please feel free to contact us:</b></p>
+                                <!-- <div class="spacer5"></div> -->
+
+                                <div class="row">
+                                    <div class="col-xs-12"><i class="fa fa-envelope-o"></i><a href="mailto:contact@lignite.io">contact@lignite.io</a></div>
+                                </div>
+
+                                <div class="spacer10"></div>
+
+                                <div class="row">
+
+                                    <div class="col-xs-12"><i class="fa fa-twitter"></i><a href="http://www.twitter.com/WeAreLignite">@WeAreLignite</a></div>
+
+                                </div>
+
+                                <div class="spacer20"></div>
+
+                                <p>Thanks very much for your support and best regards from both of us!</p>
+
+                                <div class="spacer30"></div>
+
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <img src="../resources/img/philipp-signature.png" width="114px" height="50px" />
+                                        <br/>Philipp Weder</div>
+                                    <div class="col-xs-6">
+                                        <img src="../resources/img/edwin-signature.png" width="103px" height="50px" />
+                                        <br/>Edwin Finch</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../resources/js/bootstrap.min.js"></script>
+
+    <!-- SLIDER -->
+    <script src="../resources/js/slider.js"></script>
+
+    <script src="../resources/js/owl.carousel.js"></script>
+
+    <!-- NEW NEW COLORPICKER -->
+    <link rel="stylesheet" type="text../resources/css" media="all" href="../resources/css/bootstrap-colorpalette.css" />
+    <script type="text/javascript" src="../resources/js/bootstrap-colorpalette.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text../resources/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+
+    <script src="../resources/js/jquery.tagsinput.js"></script>
+    <link rel="stylesheet" type="text../resources/css" href="../resources/css/jquery.tagsinput.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/js/select2.full.min.js"></script>
+
+    <script src="../resources/node_modules/better-timezone/dist/better-timezone.min.js"></script>
+    <script src="../resources/js/global.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link href="../resources/node_modules/cropperjs/dist/cropper.css" rel="stylesheet">
+    <script src="../resources/node_modules/cropperjs/dist/cropper.js"></script>
+
+    <script type="text/javascript" src="../resources/colours/uncorrected.js"></script>
+    <script type="text/javascript" src="../resources/translations/en.js"></script>
+
+    <script type="text/javascript" src="../resources/json/plainweather.js"></script>
+
+    <script>
+        var photoArray = [];
+
+        function dismissLiveSettingsWarning() {
+            document.getElementById("liveSettingsWarningBox").hidden = true;
+
+            localStorage["dismissLiveSettingsWarning"] = true;
+        }
+
+        function replaceAll(str, find, replace) {
+            return str.replace(new RegExp(find, 'g'), replace);
+        }
+
+        function invertColour(bgColor) {
+            if (!bgColor) {
+                return '';
+            }
+            if (bgColor.toUpperCase() === "#FF0000") {
+                return "#FFFFFF";
+            }
+            return (parseInt(bgColor.replace('#', ''), 16) > 0xffffff / 2) ? '#000' : '#fff';
+        }
+
+        function getFixedLocalstorageName(settingsItem) {
+            var fixedStorageName = settingsItem.storage_key;
+            // fixedStorageName += "--";
+
+            // var fixedName = replaceAll(settingsItem.label, " ", "").toLowerCase();
+            // fixedStorageName += fixedName;
+
+            console.log("Returning " + fixedStorageName);
+
+            return fixedStorageName;
+        }
+
+        var colourJSON;
+
+        function getConfigData() {
+            var useCelsiusCheckbox = document.getElementById('use_celsius_checkbox');
+            var locationBox = document.getElementById('custom_location_checkbox');
+
+            //console.log(JSON.stringify(photoArray));
+
+            var objects = [];
+            $.each(settingsJSON.items, function(key, val) {
+                var sectionTitle = val.title;
+                $.each(settingsJSON.items[key], function(key1, val1) {
+                    if (val1.constructor === Array) {
+                        $.each(settingsJSON.items[key][key1], function(key2, val2) {
+                            objects.push(val2);
+                        });
+                    }
+                });
+            });
+
+            // console.log("Got objects " + JSON.stringify(objects));
+
+            var options = {};
+
+            for (object in objects) {
+                var settingsItem = objects[object];
+
+                var optionDocument = document.getElementById(settingsItem.storage_key);
+                if (settingsItem.type === "colour") {
+                    optionDocument = document.getElementById("selected_colour_" + settingsItem.storage_key);
+                } else if (settingsItem.type === "number_picker") {
+                    optionDocument = document.getElementById(settingsItem.storage_key + "-slider-value");
+                }
+
+                switch (settingsItem.type) {
+                    case "toggle":
+                        if (!(settingsItem.storage_key === "show_island_image" && "{{_platformName}}".toLowerCase() === "chalk")) {
+                            console.log("Checking " + settingsItem.storage_key);
+                            options[settingsItem.storage_key] = optionDocument.checked ? 1 : 0;
+                        }
+                        break;
+                    case "list":
+                        options[settingsItem.storage_key] = optionDocument.selectedIndex;
+                        break;
+                    case "timezones":
+                        var format = moment().tz(optionDocument.value).format('MMM D YYYY hh:mm:ss');
+                        var timezoneDate = new Date(format);
+                        var currentDate = new Date();
+                        var offset = -(Math.ceil((currentDate.getTime() - timezoneDate.getTime()) / 1000) - 1);
+                        options[settingsItem.storage_key] = offset;
+                        break;
+                    case "textfield":
+                        options[settingsItem.storage_key] = optionDocument.value;
+                        break;
+                    case "number_picker":
+                        options[settingsItem.storage_key] = parseInt(optionDocument.innerHTML);
+                        break;
+                    case "colour":
+                        if (pebbleInfo.hasColour && optionDocument.value !== undefined && optionDocument.value !== null) {
+                            options[settingsItem.storage_key] = replaceAll(optionDocument.value, "#", "").toUpperCase();
+                        }
+                        break;
+                    case "dateBuilder":
+                        console.log("saving " + document.getElementById("gs-date_format_builder").value);
+                        options["gs-date_format"] = strftimeStringForDateBuilderStringArray(document.getElementById("gs-date_format_builder").value.split(","));
+                        if (options["gs-date_format"] === undefined || options["gs-date_format"].length < 1 || options["gs-date_format"] === "undefined" || options["gs-date_format"] === "") {
+                            options["gs-date_format"] = "%A";
+                        }
+                        break;
+                    case "modules":
+                        var modules = getModules();
+                        var moduleArray = [];
+                        for (var i = 0; i < modules.length; i++) {
+                            moduleArray.push(parseModuleForPebble(modules[i], i));
+                        }
+                        options["modules"] = moduleArray;
+                        break;
+                    case "photo":
+                        options["photos"] = photoArray;
+                        break;
+                }
+
+                if (settingsItem.type === "dateBuilder") {
+                    localStorage[getFixedLocalstorageName(settingsItem)] = document.getElementById("gs-date_format_builder").value;
+                } else if (settingsItem.type !== "toggle") {
+                    localStorage[getFixedLocalstorageName(settingsItem)] = options[settingsItem.storage_key];
+                } else {
+                    localStorage[getFixedLocalstorageName(settingsItem)] = (options[settingsItem.storage_key] === 1) ? true : false;
+                }
+                if (settingsItem.type === "timezones") {
+                    localStorage[getFixedLocalstorageName(settingsItem)] = optionDocument.value;
+                }
+
+                console.log(JSON.stringify(options));
+            }
+
+            console.log('Got options: ' + JSON.stringify(localStorage));
+            return options;
+        }
+
+        function getQueryParam(variable, defaultValue) {
+            var query = location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (pair[0] === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return defaultValue || false;
+        }
+
+        function NSLocalisedString(key) {
+            // console.log("Checking key " + key + " against " + Object.keys(languageData).length + " got " + languageData[key]);
+            if (languageData[key] !== undefined) {
+                return languageData[key];
+            } else {
+                return key.toUpperCase();
+            }
+        }
+
+        function addToBody(val0, optionString) {
+            $("#body_" + val0.title).append(optionString);
+        }
+
+        function colourHexStringGColour(gcolour) {
+            for (var key in colourJSON) {
+                var colourObject = colourJSON[key];
+                if (colourObject.c_identifier === gcolour) {
+                    return key;
+                }
+            }
+            console.error("Could not find " + gcolour);
+            return undefined;
+        }
+
+        function loadSetting(val2) {
+            switch (val2.type) {
+                case "toggle":
+                    if (!(val2.storage_key === "show_island_image" && "{{_platformName}}".toLowerCase() === "chalk")) {
+                        var savedSetting = localStorage[getFixedLocalstorageName(val2)];
+                        document.getElementById(val2.storage_key).checked = savedSetting ? (savedSetting === "true") : val2.default;
+                    }
+                    break;
+                case "colour":
+                    if (pebbleInfo.hasColour) {
+                        var colour = "#" + localStorage[getFixedLocalstorageName(val2)];
+
+                        if (!localStorage[getFixedLocalstorageName(val2)] || localStorage[getFixedLocalstorageName(val2)] === "UNDEFINED") {
+                            colour = colourHexStringGColour(val2.default);
+                        }
+
+                        $("#selected_colour_" + val2.storage_key).val(colour ? colour : "#FFFFFF").trigger('change');
+
+                        //TODO: Load from colours JSON if the local storage doesn't contain a colour
+                        document.getElementById(val2.storage_key + "_click").style.backgroundColor = colour;
+                        document.getElementById(val2.storage_key + "_span_closed").style.color = invertColour(colour);
+                        document.getElementById(val2.storage_key + "_span_open").style.color = invertColour(colour);
+                    }
+                    break;
+                case "list":
+                    var savedSetting = localStorage[getFixedLocalstorageName(val2)];
+                    // console.log("Checking " + JSON.stringify(val2, undefined, 4) + " for saved " + savedSetting);
+                    var newValue = (savedSetting && (savedSetting > -1)) ? NSLocalisedString(val2.list[savedSetting]) : NSLocalisedString(val2.list[val2.default]);
+                    // console.log("New value " + newValue);
+                    document.getElementById(val2.storage_key).value = newValue;
+                    break;
+                case "textfield":
+                    var savedSetting = localStorage[getFixedLocalstorageName(val2)];
+                    document.getElementById(val2.storage_key).value = savedSetting ? savedSetting : val2.default;
+                    break;
+                case "timezones":
+                    var savedSetting = localStorage[getFixedLocalstorageName(val2)];
+                    $("#" + val2.storage_key).val(savedSetting ? savedSetting : val2.default).trigger('change');
+                    break;
+                case "number_picker":
+                    break;
+                case "dateBuilder":
+                    var tags = localStorage[getFixedLocalstorageName(val2)];
+                    if (tags === undefined || tags === "undefined") {
+                        tags = "";
+                    }
+                    $('#gs-date_format_builder').importTags(tags);
+                    break;
+                case "photo":
+                case "modules":
+                    break;
+                default:
+                    console.error("Unrecognized type while loading default settings: " + val2.type);
+                    break;
+            }
+        }
+
+        function loadSettingsIntoPage(data) {
+            var items = [];
+            $.each(data.items, function(key0, val0) {
+                if ((val0.colourOnly && pebbleInfo.hasColour) || !val0.colourOnly) {
+                    $.each(data.items[key0], function(key1, val1) {
+                        if (val1.constructor === Array) {
+                            $.each(data.items[key0][key1], function(key2, val2) {
+                                if (val2.type === "colour") {
+                                    var inputID = "selected_colour_" + val2.storage_key;
+                                    var divName = val2.storage_key;
+                                    var clickID = val2.storage_key + "_click";
+
+                                    //We could load them through JSON though Philipp already made up this whole array so we'll just use that instead, ok?
+                                    var options = {
+                                        colors: [
+                                            colourArray
+                                        ]
+                                    };
+                                    //console.log(divName);
+                                    $('#' + divName).colorPalette(options)
+                                        .on('selectColor', function(e) {
+                                            $('#' + inputID).val(e.color);
+                                            $('#' + divName).slideToggle('fast');
+
+                                            document.getElementById(clickID).style.backgroundColor = e.color;
+                                            document.getElementById(divName + "_span_closed").style.color = invertColour(e.color);
+                                            document.getElementById(divName + "_span_open").style.color = invertColour(e.color);
+                                        });
+                                    $('#' + clickID).click(function() {
+                                        $('#' + divName).slideToggle('fast');
+                                    });
+                                }
+
+                                loadSetting(val2);
+                            });
+                        }
+                    });
+                }
+            });
+        }
+
+        function resetToDefaults() {
+            document.getElementById("resetToDefaults").innerHTML = "Click again to reset";
+            localStorage.clear();
+            location.reload();
+        }
+
+        var connection = undefined;
+
+        var cropData = {
+            size: {
+                w: 180,
+                h: 180
+            },
+            origin: {
+                x: 0,
+                y: 0
+            }
+        };
+
+        var pebbleInfo = {
+            platform: "{{_platformName}}",
+            frame: {
+                origin: {
+                    x: 0,
+                    y: 0
+                },
+                size: {
+                    w: 144,
+                    h: 168
+                }
+            },
+            hasColour: true
+        };
+
+        //TODO: fix this incorrect pebbleInfo ^
+
+        var imageInfo = {
+            currentImage: undefined,
+            currentImageIndex: 0,
+            cropper: undefined,
+            currentStyle: pebbleInfo.hasColour ? "coloured" : "bw",
+            loadingImage: true
+        };
+
+        function savePhotos(photos) {
+            localStorage["savedPhotos_{{_app}}_" + pebbleInfo.platform] = JSON.stringify({
+                photos: photos
+            });
+        }
+
+        function getPhotos() {
+            var savedPhotos = undefined;
+            if (localStorage["savedPhotos_{{_app}}_" + pebbleInfo.platform]) {
+                savedPhotos = JSON.parse(localStorage["savedPhotos_{{_app}}_" + pebbleInfo.platform]).photos;
+            } else {
+                savedPhotos = [];
+                savePhotos(savedPhotos);
+            }
+            console.log("Got " + savedPhotos.length + " photos.");
+            return savedPhotos;
+        }
+
+        function savePhotoObjectToIndex(photoObject, indexToSave) {
+            var photos = getPhotos();
+            photos[indexToSave] = photoObject;
+            savePhotos(photos);
+        }
+
+        function removePhotoObjectFromIndex(indexToRemove) {
+            var photos = getPhotos();
+            photos.splice(indexToRemove, 1);
+            savePhotos(photos);
+        }
+
+        function resetCropper() {
+            var cropImageText = document.getElementById("cropImageText");
+            cropImageText.hidden = false;
+            if (imageInfo.cropper) {
+                imageInfo.cropper.destroy();
+                imageInfo.cropper = undefined;
+            }
+            document.getElementById("cropImage").src = "";
+        }
+
+        var croppingImageText = [
+            "Getting out our scissors...",
+            "Working magic...",
+            "Optimizing for perfection (or something like that)...",
+            "Waving the cropped parts goodbye... 👋🏽",
+            "Generic loading message here...",
+            "Please don't wait, or do, whatever works for you",
+            "Sending photo to all of your contacts...",
+            "Sending photo to your boss...",
+            "Exchanging photos with a stranger..."
+        ];
+
+        function saveCrop() {
+            console.log("Save...");
+            resetCropper();
+            var croppingText = croppingImageText[Math.floor(Math.random() * croppingImageText.length)];
+            document.getElementById("cropImageText").innerHTML = croppingText;
+            document.getElementById("saveButtonDiv").hidden = true;
+            sendImage(true);
+        }
+
+        function cancelCrop() {
+            resetCropper();
+            document.getElementById("saveButtonDiv").hidden = true;
+            var shown = ($("#cropImageDiv").data('bs.modal') || {}).isShown;
+            if (shown) {
+                $("#openCropperButton").click();
+            }
+        }
+
+        function downloadBinaryResource(imageURL, callback, errorCallback) {
+            var req = new XMLHttpRequest();
+            req.open("GET", imageURL, true);
+            req.responseType = "arraybuffer";
+            req.onload = function(e) {
+                console.log("Loaded.");
+                var buf = req.response;
+                if (req.status == 200 && buf) {
+                    var byteArray = new Uint8Array(buf);
+                    var arr = [];
+                    for (var i = 0; i < byteArray.byteLength; i++) {
+                        arr.push(byteArray[i]);
+                    }
+
+                    console.log("Downloaded file with " + byteArray.length + " bytes.");
+                    callback(arr);
+                } else {
+                    errorCallback("Request status is " + req.status);
+                }
+            }
+            req.onerror = function(e) {
+                errorCallback(e);
+            }
+            req.send(null);
+        }
+
+        function downloadBase64Resource(imageURL, callback, errorCallback) {
+            var req = new XMLHttpRequest();
+            req.open("GET", imageURL, true);
+            req.responseType = 'blob';
+            req.onload = function(e) {
+                var buf = req.response;
+                if (req.status == 200 && buf) {
+                    console.log("Downloaded base64 file.");
+                    var reader = new FileReader();
+                    reader.onloadend = function() {
+                        callback(reader.result);
+                    }
+                    reader.readAsDataURL(buf);
+                } else {
+                    errorCallback("Request status is " + req.status);
+                }
+            }
+            req.onerror = function(e) {
+                errorCallback(e);
+            }
+            req.send(null);
+        }
+
+        function liveconfigGetQueryParam(variable, defaultValue) {
+            var query = location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+
+                if (pair[0] === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return defaultValue || false;
+        }
+
+        function reloadPhotoTabs() {
+            document.getElementById("photoTabs").innerHTML = "";
+
+            var photoString = "";
+
+            var savedPhotos = getPhotos();
+
+            var photoOptions = [];
+
+            if (pebbleInfo.hasColour) {
+                photoOptions = [{
+                    readableName: "Coloured",
+                    rawName: "coloured"
+                }, {
+                    readableName: "Black and White",
+                    rawName: "bw"
+                }, {
+                    readableName: "Fuzzy",
+                    rawName: "blur"
+                }, {
+                    readableName: "Sepia",
+                    rawName: "sepia"
+                }, {
+                    readableName: "Inverted",
+                    rawName: "invert"
+                }];
+            } else {
+                photoOptions = [{
+                    readableName: "Black and White",
+                    rawName: "bw"
+                }, {
+                    readableName: "Fuzzy",
+                    rawName: "blur"
+                }, {
+                    readableName: "Inverted",
+                    rawName: "invert"
+                }];
+            }
+
+            for (var i = 0; i < savedPhotos.length; i++) {
+                //Honestly some of the worst code I've ever written lol
+                photoString += '<div id="entry-container"><div align="center" id="photoAnchor' + i + '"><label>Photo #' + (i + 1) + '</label></div><div class="spacer10"></div><div id="photo' + i + '" align="center"><img src="' + savedPhotos[
+                        i].pebblePhoto +
+                    '" class="img-responsive" style="height: 100%; width: 100%; border-radius: 4px;"/></div><div class="spacer10"></div><div><div class="btn-group btn-group-justified" role="group" data-toggle="buttons"><label class="btn btn-lg btn-danger" onclick="removePhoto(' +
+                    i +
+                    ')"><input type="radio" name="options" id="removePhoto' + i + '"><i class="fa fa-trash-o"></i> Remove</label><label class="btn btn-lg btn-default dark" onclick="cropPhoto(' + i +
+                    ')"><input type="radio" name="options" id="cropPhoto';
+                photoString += "" + i +
+                    '"><i class="fa fa-crop"></i> Crop</label></div></div><div class="spacer20"></div><div class="text-center"><label>How would you like to display this photo on your Pebble?</label></div><div class="spacer10"></div><div class="btn-group-vertical blocks btn-block" data-toggle="buttons">';
+
+                for (var i1 = 0; i1 < photoOptions.length; i1++) {
+                    var photoOption = photoOptions[i1];
+                    var extraClass = "";
+                    if (photoOption.rawName === savedPhotos[i].style) {
+                        extraClass = " active";
+                    }
+                    photoString += '<label class="btn btn-lg btn-default' + extraClass + '" onclick="changeOptionForPhoto(' +
+                        i + ', \'' + photoOption.rawName + '\')"><input type="radio" name="options" id="' + photoOption.rawName + 'PhotoOption' + i + '" >' + photoOption.readableName + '</label>';
+                }
+
+                photoString += '</div></div></div>';
+            }
+
+            if (savedPhotos.length < 6) {
+                photoString += '<div id="entry-container"><div id="photo' + savedPhotos.length + '" class="' + ((savedPhotos.length === 0) ? "dottedOnlyOne" : "dotted") + '"';
+                photoString += 'onclick="clickTest(' + savedPhotos.length + ')"></div><input type="file" onchange="loadPhoto(' + savedPhotos.length +
+                    ')" accept="image/x-png, image/jpeg" id="photoInput' + savedPhotos.length + '" style="display:none;"><div></div></div>';
+            }
+
+            $("#photoTabs").append(photoString);
+        }
+
+        function changeOptionForPhoto(photoToChange, option) {
+            console.log(photoToChange + " " + option);
+            var photos = getPhotos();
+            imageInfo.currentImage = photos[photoToChange].rawPhoto;
+            imageInfo.currentImageIndex = photoToChange;
+            imageInfo.currentStyle = option;
+            cropData = photos[photoToChange].cropData;
+
+            sendImage(false);
+        }
+
+        function removePhoto(photoToRemove) {
+            console.log("Removing " + photoToRemove);
+
+            if (connection) {
+                connection.send(JSON.stringify({
+                    imageData: 1,
+                    deleteImageAtIndex: photoToRemove
+                }));
+            }
+            var found = false;
+            for (var i = 0; i < photoArray.length; i++) {
+                if (photoArray[i].imageIndex === photoToRemove) {
+                    photoArray.splice(i, 1);
+                    found = true;
+                }
+            }
+            if (!found) {
+                photoArray.push({
+                    imageData: 1,
+                    deleteImageAtIndex: photoToRemove
+                });
+            }
+
+            localStorage["photoArrayStorage"] = JSON.stringify({
+                "array": photoArray
+            });
+
+            var photos = getPhotos();
+            photos.splice(photoToRemove, 1);
+            savePhotos(photos);
+
+            reloadPhotoTabs();
+
+            handleServerSideImages();
+        }
+
+        function cropPhoto(photoToCrop) {
+            console.log(photoToCrop);
+            var photos = getPhotos();
+            imageInfo.currentImage = photos[photoToCrop].rawPhoto;
+            imageInfo.currentImageIndex = photoToCrop;
+            imageInfo.currentStyle = photos[photoToCrop].style;
+            imageInfo.loadingImage = false;
+            cropData = photos[photoToCrop].cropData;
+            setupCropper();
+        }
+
+        function reloadCropper() {
+            imageInfo.cropper.destroy();
+            var cropImage = document.getElementById("cropImage");
+            cropImage.src = imageInfo.currentImage;
+
+            var cropperInfo = {
+                aspectRatio: pebbleInfo.frame.size.w / pebbleInfo.frame.size.h,
+                viewMode: 1,
+                background: true,
+                rotatable: true,
+                movable: true,
+                scalable: true,
+                zoomable: true,
+                //zoomOnWheel: false,
+                modal: false,
+                crop: cropChanged
+            };
+            if (cropData) {
+                cropperInfo.data = {
+                    x: cropData.origin.x,
+                    y: cropData.origin.y,
+                    width: cropData.size.w,
+                    height: cropData.size.h,
+                    rotate: (cropData.rotation !== undefined) ? cropData.rotation : 0
+                };
+            }
+            imageInfo.cropper = new Cropper(cropImage, cropperInfo);
+            setTimeout(function() {
+                imageInfo.cropper.setData({
+                    width: 0,
+                    height: 0
+                });
+
+                while (imageInfo.cropper.getCanvasData().top < 0) {
+                    imageInfo.cropper.zoom(-0.1);
+                }
+
+                imageInfo.cropper.setData({
+                    width: pebbleInfo.frame.size.w,
+                    height: pebbleInfo.frame.size.h
+                });
+            }, 100);
+        }
+
+        function rotateImageLeft() {
+            imageInfo.cropper.rotate(-90);
+            imageInfo.cropper.setCanvasData({
+                top: 0,
+                left: 0
+            });
+            reloadCropper();
+        }
+
+        function rotateImageRight() {
+            imageInfo.cropper.rotate(90);
+            imageInfo.cropper.setCanvasData({
+                top: 0,
+                left: 0
+            });
+            reloadCropper();
+        }
+
+        function cropChanged(e) {
+            cropData.origin = {
+                x: parseInt(e.detail.x.toFixed(0)),
+                y: parseInt(e.detail.y.toFixed(0))
+            };
+            cropData.size = {
+                w: parseInt(e.detail.width.toFixed(0)),
+                h: parseInt(e.detail.height.toFixed(0))
+            };
+            cropData.rotation = e.detail.rotate;
+        }
+
+        var loadingImageText = [
+            "Uploading photo to the NSA...",
+            "Working our magic...",
+            "Sending photo out into space...",
+            "Creating a Polaroid copy of your photo...",
+            "Putting your photo in a dark room...",
+            "Admiring your photo...",
+            "A monkey is now taking your image in for processing...",
+            "Shaking it like a Polaroid picture...",
+            "Generic boring loading message here...",
+            "Sending photo to all of your contacts...",
+            "Sending photo to your boss...",
+            "Exchanging photos with a stranger..."
+        ];
+
+        function setupCropper() {
+            var cropImageText = document.getElementById("cropImageText");
+            var loadingText = loadingImageText[Math.floor(Math.random() * loadingImageText.length)];
+
+            if (!(($("#cropImageDiv").data('bs.modal') || {}).isShown)) {
+                $("#openCropperButton").click();
+                document.getElementById("saveButtonDiv").hidden = true;
+            }
+            cropImageText.innerHTML = loadingText;
+            if (!imageInfo.loadingImage) {
+                setTimeout(function() {
+                    if (imageInfo.cropper) {
+                        imageInfo.cropper.destroy();
+                        imageInfo.cropper = undefined;
+                    }
+                    var cropImage = document.getElementById("cropImage");
+                    cropImage.src = imageInfo.currentImage;
+
+                    var cropperInfo = {
+                        aspectRatio: pebbleInfo.frame.size.w / pebbleInfo.frame.size.h,
+                        viewMode: 1,
+                        background: true,
+                        rotatable: true,
+                        movable: true,
+                        scalable: true,
+                        zoomOnWheel: false,
+                        modal: false,
+                        crop: cropChanged
+                    };
+                    if (cropData) {
+                        cropperInfo.data = {
+                            x: cropData.origin.x,
+                            y: cropData.origin.y,
+                            width: cropData.size.w,
+                            height: cropData.size.h,
+                            rotate: (cropData.rotation !== undefined) ? cropData.rotation : 0
+                        };
+                    }
+                    imageInfo.cropper = new Cropper(cropImage, cropperInfo);
+                    cropImageText.innerHTML = "This photo has been recreated to display colours that are available on your Pebble.";
+
+                    document.getElementById("saveButtonDiv").hidden = false;
+                }, 200);
+            }
+        }
+
+        function deleteImage(imageID, pebbleCrop, associatedPhotoSessionData) {
+            var postData = {
+                imageID: imageID,
+                pebbleCrop: pebbleCrop,
+                photoSessionData: associatedPhotoSessionData
+            };
+            console.log("Deleting " + imageID);
+            //Please do not use our API. If you want help with converting images, simply shoot me an email:
+            //edwin@lignite.io
+            //I'm happy to help :)
+            $.post("https://api.lignite.me:5050/delete", JSON.stringify(postData), function(data, status) {
+                var object = JSON.parse(data);
+                console.log("Got data back from the server " + data);
+            });
+        }
+
+        //http://stackoverflow.com/questions/6139107/programatically-select-text-in-a-contenteditable-html-element
+        function selectElementContents(el) {
+            var range = document.createRange();
+            range.selectNodeContents(el);
+            var sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+
+        function clickTest(clicked) {
+            //http://stackoverflow.com/questions/6031412/detect-android-phone-via-javascript-jquery
+            var ua = navigator.userAgent.toLowerCase();
+            var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+            if (localStorage["userHasCrashesOnYounique"]) {
+                isAndroid = true;
+            }
+            if (isAndroid) {
+                var postData = {
+                    pebbleAccountToken: "{{_pebbleAccountToken}}"
+                };
+                $.post("https://api.lignite.me:1509/android/create_session", JSON.stringify(postData), function(data, status) {
+                    var object = JSON.parse(data);
+                    console.log(data);
+                    if (object.error) {
+                        BootstrapDialog.show({
+                            title: "Error Creating Photo Uploader",
+                            message: object.error,
+                            type: BootstrapDialog.TYPE_DANGER
+                        });
+                        return;
+                    }
+
+                    var link = "https://www.lignite.io/photos/" + object.token + "/" + (6 - getPhotos().length);
+
+                    BootstrapDialog.show({
+                        title: "Photo Uploader for Android",
+                        message: "Unfortunately, Pebble for Android is using a very outdated browser which doesn't support uploading photos from the settings page. We've created an easy to use workaround though.\n\nPlease copy the following link and open it in another browser <b>on your phone</b> such as Chrome.\n\n(You can tap the link below to highlight it all)\n\n<p class=\"dont-break-out\" style=\"color:#3399ff;\" id=\"photoLinkText\">" +
+                            link + "</p>" +
+                            '<div class="spacer20"></div><a onclick="location.reload()" class="btn btn-block btn-default"><span class="glyphicon glyphicon-repeat"></span> Tap here to refresh when you\'re back</a>',
+                        type: BootstrapDialog.TYPE_DEFAULT
+                    });
+
+                    setTimeout(function() {
+                        document.getElementById("photoLinkText").onclick = function() {
+                            selectElementContents(document.getElementById("photoLinkText"));
+                        }
+                    }, 250);
+                });
+            } else {
+                $("#photoInput" + clicked).click();
+            }
+        }
+
+        function prepareForNewBase64Image(base64Image, index, associatedPhotoSessionData) {
+            var postData = {
+                image: base64Image,
+                options: {
+                    prepCrop: true
+                },
+                pebbleInfo: pebbleInfo
+            };
+            imageInfo.loadingImage = true;
+            setupCropper();
+            //Please do not use our API. If you want help with converting images, simply shoot me an email:
+            //edwin@lignite.io
+            //I'm happy to help :)
+            $.post("https://api.lignite.me:5050/convert", JSON.stringify(postData), function(data, status) {
+                var object = JSON.parse(data);
+                downloadBase64Resource(object.imageURL, function(base64Photo) {
+                    imageInfo.currentImage = base64Photo;
+                    imageInfo.currentImageIndex = index;
+                    imageInfo.loadingImage = false;
+                    setupCropper();
+
+                    deleteImage(object.imageID, false, associatedPhotoSessionData);
+                }, function(error) {
+                    console.error("Error " + error);
+
+                    deleteImage(object.imageID, false, associatedPhotoSessionData);
+                });
+            });
+        }
+
+        var photoSession = undefined;
+        //TODO: fix undefined photoSession
+
+        function handleServerSideImages() {
+            console.log("你好狗");
+            if (photoSession) {
+                console.log(JSON.stringify(photoSession));
+                if (photoSession.photos.length > 0) {
+                    var amountOfPhotos = getPhotos().length;
+                    if (amountOfPhotos >= 6) {
+                        BootstrapDialog.show({
+                            title: "Too Many Photos",
+                            message: "There are too many photos uploaded. Please delete a photo to process the next one, or leave the photos how they are if you are happy with them and any remaining photos from the photo uploader will be automatically deleted.",
+                            type: BootstrapDialog.TYPE_DANGER
+                        });
+                        return;
+                    }
+                    var fixedIndex = photoSession.photos.length - 1;
+                    downloadBase64Resource("https://www.lignite.me/photo_uploader/photos/" + photoSession.photos[fixedIndex].id + ".png", function(result) {
+                        console.log("Got " + fixedIndex);
+                        amountOfPhotos = getPhotos().length;
+                        if (amountOfPhotos < 6) {
+                            prepareForNewBase64Image(result, amountOfPhotos, {
+                                token: photoSession.token,
+                                imageID: photoSession.photos[fixedIndex].id
+                            });
+                            photoSession.photos.splice(fixedIndex, 1);
+                        }
+                    });
+                } else {
+                    photoSession = undefined;
+                }
+            }
+        }
+
+        function sendImage(saveCrop) {
+            if (!imageInfo.currentImage) {
+                console.error("No image!");
+                return;
+            }
+
+            if (imageInfo.cropper) {
+                imageInfo.cropper.disable();
+            }
+
+            var postData = {
+                image: imageInfo.currentImage,
+                cropData: cropData,
+                pebbleInfo: pebbleInfo,
+                options: {
+                    pebbleCrop: true,
+                    style: imageInfo.currentStyle
+                }
+            };
+            console.log("Sending image data.");
+            //Please do not use our API. If you want help with converting images, simply shoot me an email:
+            //edwin@lignite.io
+            //I'm happy to help :)
+            $.post("https://api.lignite.me:5050/convert", JSON.stringify(postData), function(data, status) {
+                var object = JSON.parse(data);
+                console.log("Got " + data);
+                downloadBinaryResource(object.pebbleURLs.leftHalf, function(leftBinaryArray) {
+                    downloadBinaryResource(object.pebbleURLs.rightHalf, function(rightBinaryArray) {
+                        var imageData = {
+                            imageData: {
+                                leftHalf: leftBinaryArray,
+                                rightHalf: rightBinaryArray
+                            },
+                            imageIndex: imageInfo.currentImageIndex
+                        };
+
+                        photoArray.push(imageData);
+
+                        localStorage["photoArrayStorage"] = JSON.stringify({
+                            "array": photoArray
+                        });
+
+                        var sendString = JSON.stringify(imageData);
+
+                        if (connection) {
+                            connection.send(sendString);
+                        }
+
+                        downloadBase64Resource(object.imageURL, function(base64Photo) {
+                            var savedPhotos = getPhotos();
+
+                            console.log("Length " + imageInfo.currentImage.length);
+
+                            if (savedPhotos[imageInfo.currentImageIndex]) {
+                                var photoObject = savedPhotos[imageInfo.currentImageIndex];
+                                photoObject.pebblePhoto = base64Photo;
+                                photoObject.style = imageInfo.currentStyle;
+                                photoObject.cropData = cropData;
+                                savedPhotos[imageInfo.currentImageIndex] = photoObject;
+                            } else {
+                                var photoObject = {
+                                    pebblePhoto: base64Photo,
+                                    style: imageInfo.currentStyle,
+                                    rawPhoto: imageInfo.currentImage,
+                                    cropData: cropData
+                                };
+                                savedPhotos[imageInfo.currentImageIndex] = photoObject;
+                            }
+
+                            var shown = ($("#cropImageDiv").data('bs.modal') || {}).isShown;
+                            if (shown) {
+                                $("#openCropperButton").click();
+                            }
+
+                            savePhotos(savedPhotos);
+
+                            deleteImage(object.imageID, true);
+
+                            reloadPhotoTabs();
+
+                            imageInfo.currentStyle = pebbleInfo.hasColour ? "coloured" : "bw";
+
+                            window.location.hash = "photoAnchor" + imageInfo.currentImageIndex;
+
+                            setTimeout(handleServerSideImages, 750);
+                        }, function(error) {
+                            console.error("Error " + error);
+
+                            deleteImage(object.imageID, true);
+                        });
+                    }, function(error) {
+                        console.log("Windows error: " + error);
+
+                        deleteImage(object.imageID, true);
+                    });
+                }, function(error) {
+                    console.log("Windows error: " + error);
+
+                    deleteImage(object.imageID, true);
+                });
+            });
+        }
+
+        function loadPhoto(clicked) {
+            var file = document.getElementById("photoInput" + clicked).files[0]; //sames as here
+            var reader = new FileReader();
+
+            if (file.size > 250000000) {
+                BootstrapDialog.show({
+                    title: 'Photo Too Large',
+                    message: "Please upload photos that are 25MB or less, sorry.",
+                    type: BootstrapDialog.TYPE_DANGER
+                });
+                return;
+            }
+
+            reader.onloadend = function() {
+                prepareForNewBase64Image(reader.result, clicked);
+            }
+
+            if (file) {
+                reader.readAsDataURL(file); //reads the data as a URL
+            }
+        }
+
+        var moduleTypes;
+        switch ("{{_platformName}}") {
+            default:
+                case "aplite":
+                moduleTypes = [
+                "Bluetooth", "separator",
+                "Battery", "separator",
+                "Weather condition",
+                "Weather temperature"
+            ];
+            break;
+            case "basalt":
+                    case "chalk":
+                    moduleTypes = [
+                    "Bluetooth", "separator",
+                    "Battery", "separator",
+                    "Weather condition",
+                    "Weather temperature", "separator",
+                    "Steps", "Time active",
+                    "Walked distance", "Light sleep",
+                    "Deep sleep", "Calories burned while resting",
+                    "Calories burned while active"
+                ];
+                break;
+            case "diorite":
+                    case "emery":
+                    moduleTypes = [
+                    "Bluetooth", "separator",
+                    "Battery", "separator",
+                    "Weather condition",
+                    "Weather temperature", "separator",
+                    "Steps", "Time active",
+                    "Walked distance", "Light sleep",
+                    "Deep sleep", "Calories burned while resting",
+                    "Calories burned while active", "Heart rate"
+                ];
+                break;
+        }
+
+        function saveModules(modules) {
+            localStorage["modules_{{_app}}_" + pebbleInfo.platform] = JSON.stringify({
+                modules: modules
+            });
+        }
+
+        function getModules() {
+            var modules = undefined;
+            if (localStorage["modules_{{_app}}_" + pebbleInfo.platform]) {
+                modules = JSON.parse(localStorage["modules_{{_app}}_" + pebbleInfo.platform]).modules;
+            } else {
+                modules = [];
+                saveModules(modules);
+            }
+            console.log("Got " + modules.length + " modules.");
+            return modules;
+        }
+
+        function parseModuleForPebble(module, index) {
+            var dataType = module.moduleType;
+            var dataInfo = 0;
+            var displayType = 0;
+            if (dataType === 3) {
+                dataType = 2;
+                dataInfo = 1;
+            }
+            if (dataType === 2) {
+                displayType = 1;
+            } else if (dataType > 3) {
+                dataType = 3;
+                dataInfo = module.moduleType - 4;
+            }
+            var pebbleModule = {
+                infoModuleDataType: dataType,
+                infoModuleDisplayType: displayType,
+                infoModuleDataInfo: dataInfo,
+                infoModuleEnabled: 1,
+                infoModuleIndex: index
+            };
+            return pebbleModule;
+        }
+
+        function sendAllModules() {
+            var modules = getModules();
+            var pebbleModules = [];
+            for (var i = 0; i < modules.length; i++) {
+                pebbleModules.push(parseModuleForPebble(modules[i], i));
+            }
+            if (connection) {
+                var sendString = JSON.stringify({
+                    modules: pebbleModules
+                });
+                console.log(sendString);
+                connection.send(sendString);
+            }
+        }
+
+        function getModuleLabelForIndex(index) {
+            var labels = [
+                "Bottom left", "Bottom right",
+                "Middle left", "Middle right",
+                "Top left", "Top right"
+            ];
+            if ("{{_platformName}}" === "chalk") {
+                labels = [
+                    "Bottom",
+                    "Top left",
+                    "Top right"
+                ];
+            }
+            return labels[index];
+        }
+
+        function getFixedModuleType(moduleType) {
+            var newType = moduleType;
+            var separatorLocations = [];
+            var amountOfSeparatorsBelow = 0;
+            for (var i = 0; i < moduleTypes.length; i++) {
+                if (moduleTypes[i] === "separator") {
+                    separatorLocations.push(i);
+                    amountOfSeparatorsBelow += (i < moduleType);
+                }
+            }
+            newType -= (separatorLocations.length - (separatorLocations.length - amountOfSeparatorsBelow));
+            return newType;
+        }
+
+        function reloadModules() {
+            document.getElementById("modules").innerHTML = "";
+
+            var modulesString = "";
+
+            var modules = getModules();
+            for (var i = 0; i < modules.length; i++) {
+                var moduleLabel = getModuleLabelForIndex(i);
+                var module = modules[i];
+                var lines0 = [
+                    '<div class="form-group">',
+                    '<div id="entry-container">',
+                    '<label>' + moduleLabel + ' module</label>',
+                    '<div>',
+                    //'<div>Please use the dropdown to set up the ' + moduleLabel.toLowerCase() + ' module:</div>',
+                    '<div class="spacer10"></div>',
+                    '<div class="input-group">',
+                    '<div class="input-group-btn">',
+                    '<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type <span class="caret"></span></button>',
+                    '<ul class="dropdown-menu">'
+                ];
+
+                for (var i1 = 0; i1 < moduleTypes.length; i1++) {
+                    if (moduleTypes[i1] === "separator") {
+                        lines0.push('<li role="separator" class="divider"></li>');
+                    } else {
+                        lines0.push('<li><a onclick="moduleTypeChanged(' + i + ', ' + i1 + ')">' + moduleTypes[i1] + '</a></li>');
+                    }
+                }
+
+                var lines1 = [
+                    '</ul>',
+                    '</div>',
+                    '<input type="text" class="form-control" aria-label="..." readonly="69" value="' + moduleTypes[module.rawType] + '">',
+                    '<span class="input-group-btn">',
+                    '<button type="button" class="btn btn-danger" id="module-delete" onclick="deleteModule(' + i + ')"><span class="glyphicon glyphicon-trash"></span></button>',
+                    '</span>',
+                    '</div>',
+                    '</div>',
+                    '</div>',
+                    '</div>'
+                ];
+                var lines = lines0.concat(lines1);
+
+                var string = "";
+                for (var i1 = 0; i1 < lines.length; i1++) {
+                    string += lines[i1];
+                }
+                modulesString += string;
+            }
+            if (modules.length < (("{{_platformName}}" === "chalk") ? 3 : 6)) {
+                var moduleLabel = getModuleLabelForIndex(i);
+                var lines0 = [
+                    '<div class="form-group">',
+                    '<div id="entry-container">',
+                    '<label>Setup ' + moduleLabel.toLowerCase() + ' module</label>',
+                    '<div>',
+                    '<div>Please use the dropdown to set up the ' + moduleLabel.toLowerCase() + ' module:</div>',
+                    '<div class="spacer10"></div>',
+                    '<div class="input-group">',
+                    '<div class="input-group-btn">',
+                    '<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type <span class="caret"></span></button>',
+                    '<ul class="dropdown-menu">'
+                ];
+
+                for (var i1 = 0; i1 < moduleTypes.length; i1++) {
+                    if (moduleTypes[i1] === "separator") {
+                        lines0.push('<li role="separator" class="divider"></li>');
+                    } else {
+                        lines0.push('<li><a onclick="moduleTypeChanged(' + i + ', ' + i1 + ')">' + moduleTypes[i1] + '</a></li>');
+                    }
+                }
+
+                var lines1 = [
+                    '</ul>',
+                    '</div>',
+                    '<input type="text" class="form-control" aria-label="..." readonly="69" value="Please select a module type to the left">',
+                    '</div>',
+                    '</div>',
+                    '</div>',
+                    '</div>'
+                ];
+                var lines = lines0.concat(lines1);
+
+                var string = "";
+                for (var i1 = 0; i1 < lines.length; i1++) {
+                    string += lines[i1];
+                }
+                modulesString += string;
+            }
+
+            $("#modules").append(modulesString);
+        }
+
+        function moduleTypeChanged(moduleLocation, moduleType) {
+            console.log("location " + moduleLocation + " rawType " + moduleType + " fixedType " + getFixedModuleType(moduleType));
+            var modules = getModules();
+            var newModule = {
+                rawType: moduleType,
+                moduleType: getFixedModuleType(moduleType)
+            };
+            modules[moduleLocation] = newModule;
+            saveModules(modules);
+            reloadModules();
+            connection.send(JSON.stringify(parseModuleForPebble(newModule, moduleLocation)));
+        }
+
+        function deleteModule(moduleLocation) {
+            var modules = getModules();
+
+            var parsedModule = parseModuleForPebble(modules[moduleLocation], moduleLocation);
+            parsedModule.infoModuleEnabled = 0;
+            connection.send(JSON.stringify(parsedModule));
+
+            modules.splice(moduleLocation, 1);
+            saveModules(modules);
+            reloadModules();
+        }
+
+        function userHasCrashes() {
+            localStorage["userHasCrashesOnYounique"] = "https://www.youtube.com/watch?v=-yFhR1fKWG0";
+
+            BootstrapDialog.show({
+                title: 'Workaround applied',
+                message: "Success. As a workaround, we'll have you use the Android photo uploader to upload photos.\n\nSimply close these dialogs and try uploading a new photo.",
+                type: BootstrapDialog.TYPE_DEFAULT
+            });
+        }
+
+        function undoWorkaround() {
+            localStorage.removeItem("userHasCrashesOnYounique");
+
+            BootstrapDialog.show({
+                title: 'Workaround undone',
+                message: "Success. You're back to the regular iOS photo uploader.\n\nSimply close these dialogs and upload a new photo as you usually would.",
+                type: BootstrapDialog.TYPE_DEFAULT
+            });
+        }
+
+        function manageAccount() {
+            var redirectURL = "https://www.lignite.me/v2/update?currentEmail=" + getQueryParam("email") + "&accessCode=" + getQueryParam("accessCode");
+
+            document.location = redirectURL;
+        }
+
+        var Color = function Color(hexVal) { //define a Color class for the color objects
+            this.hex = hexVal;
+        };
+
+        //Keizel if you copy us again, I swear I'll...
+        var dateOptions = [
+            "select_from_list", "dd", "mm", "yy", "_space_", ".", "/", "-", "_comma_",
+            "yyyy", "weekday_long", "weekday_short", "weeknumber", "month_long", "month_short",
+            "dd_mm_yy", "mm_dd_yy"
+        ];
+        var dateOptionsLocalized = [];
+        var dateOptionsFormatted = [
+            "Lig-night", "%d", "%m", "%y", " ", ".", "/", "-", ",", "%Y", "%A", "%a", "%W", "%B", "%b",
+            "%d/%m/%y", "%m/%d/%y"
+        ];
+
+        constructColor = function(colorObj) {
+            var hex = colorObj.hex.substring(1);
+            /* Get the RGB values to calculate the Hue. */
+            var r = parseInt(hex.substring(0, 2), 16) / 255;
+            var g = parseInt(hex.substring(2, 4), 16) / 255;
+            var b = parseInt(hex.substring(4, 6), 16) / 255;
+
+            /* Getting the Max and Min values for Chroma. */
+            var max = Math.max.apply(Math, [r, g, b]);
+            var min = Math.min.apply(Math, [r, g, b]);
+
+
+            /* Variables for HSV value of hex color. */
+            var chr = max - min;
+            var hue = 0;
+            var val = max;
+            var sat = 0;
+
+
+            if (val > 0) {
+                /* Calculate Saturation only if Value isn't 0. */
+                sat = chr / val;
+                if (sat > 0) {
+                    if (r == max) {
+                        hue = 60 * (((g - min) - (b - min)) / chr);
+                        if (hue < 0) {
+                            hue += 360;
+                        }
+                    } else if (g == max) {
+                        hue = 120 + 60 * (((b - min) - (r - min)) / chr);
+                    } else if (b == max) {
+                        hue = 240 + 60 * (((r - min) - (g - min)) / chr);
+                    }
+                }
+            }
+            colorObj.chroma = chr;
+            colorObj.hue = hue;
+            colorObj.sat = sat;
+            colorObj.val = val;
+            colorObj.luma = 0.3 * r + 0.59 * g + 0.11 * b;
+            colorObj.red = parseInt(hex.substring(0, 2), 16);
+            colorObj.green = parseInt(hex.substring(2, 4), 16);
+            colorObj.blue = parseInt(hex.substring(4, 6), 16);
+            return colorObj;
+        };
+
+        sortColorsByHue = function(colors) {
+            return colors.sort(function(a, b) {
+                return a.hue - b.hue;
+            });
+        };
+
+        var colourArray = [
+            '#000000', '#000055', '#0000aa', '#0000ff', '#005500', '#005555', '#0055aa', '#0055ff', '#00aa00', '#00aa55', '#00aaaa', '#0000ff', '#00ff00', '#00ff55', '#00ffaa',
+            '#00ffff', '#550000',
+            '#5500aa', '#5500ff', '#555500', '#555555', '#5555aa', '#5555ff', '#55aa00', '#55aa55', '#55aaaa', '#55aaff', '#55ff00', '#55ff55', '#55ffaa', '#55ffff', '#aa0000',
+            '#aa0055', '#aa00aa',
+            '#aa00ff', '#aa5500', '#aa5555', '#aa55aa', '#aa55ff', '#aaaa00', '#aaaa55', '#aaaaaa', '#ffffff', '#aaaaff', '#aaff00', '#aaff55', '#aaffaa', '#aaffff', '#ff0000',
+            '#ff0055', '#ff00aa',
+            '#ff00ff', '#ff5500', '#ff5555', '#ff55aa', '#ff55ff', '#ffaa00', '#ffaa55', '#ffaaaa', '#ffaaff', '#ffff00', '#ffff55', '#ffffaa', '#550055'
+        ];
+        var colors = [];
+        $.each(colourArray, function(i, v) {
+            var color = new Color(v);
+            constructColor(color);
+            colors.push(color);
+        });
+        colors = sortColorsByHue(colors);
+        for (var i = 0; i < colors.length; i++) {
+            colourArray[i] = colors[i].hex;
+        }
+
+        $(document).ready(function() {
+            if (localStorage["dismissLiveSettingsWarning"]) {
+                dismissLiveSettingsWarning();
+            }
+
+            loadSettingsIntoPage(settingsJSON);
+
+            dateOptionsLocalized = [NSLocalisedString("select_from_list"), NSLocalisedString("dd"), NSLocalisedString("mm"), NSLocalisedString("yy"),
+                NSLocalisedString("_space_"), NSLocalisedString("."), NSLocalisedString("/"), NSLocalisedString("-"), NSLocalisedString("_comma_"),
+                NSLocalisedString("yyyy"), NSLocalisedString("weekday_long"), NSLocalisedString("weekday_short"),
+                NSLocalisedString("weeknumber"), NSLocalisedString("month_long"), NSLocalisedString("month_short"), NSLocalisedString("dd_mm_yy"),
+                NSLocalisedString("mm_dd_yy")
+            ];
+        });
+        //history.replaceState("why the heak", "are you looking into our code?", "/{{_app}}");
+
+        var submitButton = document.getElementById('submit');
+        submitButton.addEventListener('click', function() {
+            var return_to = getQueryParam('return_to', 'pebblejs://close#');
+            document.location = return_to + JSON.stringify(getConfigData());
+        });
+    </script>
+
+    <script>
+        function liveconfigGetQueryParam(variable, defaultValue) {
+            var query = location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+
+                if (pair[0] === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return defaultValue || false;
+        }
+
+        var hexDigits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+
+        function rgb2hex(rgb) {
+            rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+            return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+        }
+
+        function hex(x) {
+            return isNaN(x) ? "00" : hexDigits[(x - x % 16) / 16] + hexDigits[x % 16];
+        }
+
+        function hasClass(element, cls) {
+            return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+        }
+
+        function saveSettings() {
+            getConfigData();
+        }
+
+        function settingsStringifiedJSONForId(id, value) {
+            var json = {};
+            json[id] = value;
+            return JSON.stringify(json);
+        }
+
+        var connection = undefined;
+
+        function strftimeStringForDateBuilderStringArray(items) {
+            var formattedString = "";
+            for (var i = 0; i < items.length; i++) {
+                formattedString += dateOptionsFormatted[dateOptionsLocalized.indexOf(items[i])];
+            }
+            return formattedString;
+        }
+
+        function dateBuilderStringFromstrftimeArray(items) {
+            var formattedString = "";
+            for (var i = 0; i < items.length; i++) {
+                formattedString += NSLocalisedString(dateOptions[dateOptionsFormatted.indexOf(items[i])]);
+            }
+            return formattedString;
+        }
+
+        function updateDateFormat() {
+            var items = document.getElementById("gs-date_format_builder").value.split(",");
+            var formattedString = strftimeStringForDateBuilderStringArray(items);
+            if (connection) {
+                if (formattedString === undefined || formattedString === "undefined" || formattedString === "") {
+                    formattedString = "%A";
+                }
+                connection.send(settingsStringifiedJSONForId("gs-date_format", formattedString));
+            }
+            console.log('"' + formattedString + '"');
+        }
+
+        var triesSinceLastConnection = 0;
+
+        function attemptLiveConfigConnection(uuid, watchtoken) {
+            if (triesSinceLastConnection < 3) {
+                connection = new WebSocket("wss://api.lignite.me/liveconfig/forward/" + uuid + "/" + watchtoken);
+                // connection = new WebSocket("wss://api.lignite.me/liveconfig/mate");
+            } else {
+                console.error("Out of connection attempts.");
+            }
+        }
+
+        var sentModulesOnBoot = false;
+
+        window.onload = function() {
+            //console.log("Got " + localStorage["photoArrayStorage"]);
+            if (localStorage["photoArrayStorage"] !== undefined) {
+                photoArray = JSON.parse(localStorage["photoArrayStorage"]).array;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
+
+<!-- Load colours from JSON
+$.getJSON("colours_corrected.json", function(data) {
+$.each(data.items, function(value, key) {
+options.colors[0][value] = replaceAll(JSON.stringify(data.items[value].value.toUpperCase()), "\"", "");
+});
+});
+-->

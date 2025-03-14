@@ -1,0 +1,67 @@
+{
+  "version": "2.6.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_VISITOR_42",
+          "file": "visitor.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_VISITOR_50",
+          "file": "visitor.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "44067cdd-a10d-4e83-ba81-b886ceedb2b7",
+    "messageKeys": {
+      "bea_shake": 2,
+      "accessCode": 1001,
+      "bea_show_battery": 6,
+      "bea_data": 3,
+      "pebbleAccountToken": 6969,
+      "checksum": 1002,
+      "bea_back_colour": 10,
+      "bea_front_colour": 9,
+      "gs_date_format": 2000,
+      "bea_animation_type": 4,
+      "bea_btrealert": 1,
+      "bea_time_colour": 7,
+      "bea_btdisalert": 0,
+      "bea_show_date": 5,
+      "email": 1000,
+      "bea_background_colour": 8
+    },
+    "enableMultiJS": true,
+    "displayName": "Beat",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "diorite"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Beat"
+}

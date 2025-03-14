@@ -1,0 +1,60 @@
+{
+  "version": "2.5.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_14",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "5983e7b4-9943-4f01-a598-5595df411e26",
+    "messageKeys": {
+      "btdisalert": 0,
+      "hour": 5,
+      "battery": 4,
+      "accent_colour": 8,
+      "checksum": 1002,
+      "btrealert": 1,
+      "background_colour": 7,
+      "gs_date_format": 2000,
+      "pebbleAccountToken": 6969,
+      "time": 2,
+      "date": 3,
+      "accessCode": 1001,
+      "email": 1000,
+      "minute": 6,
+      "text_colour": 9
+    },
+    "enableMultiJS": true,
+    "displayName": "Graph",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Graph"
+}

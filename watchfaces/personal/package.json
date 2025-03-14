@@ -1,0 +1,163 @@
+{
+  "version": "2.4.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_20",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_36",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_14",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_12",
+          "file": "impact.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "basalt", "chalk", "emery"
+          ],
+          "type": "png",
+          "name": "IMAGE_BACKGROUND",
+          "file": "background.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt", "chalk", "emery"
+          ],
+          "type": "png",
+          "name": "IMAGE_BATTERY_RED",
+          "file": "battery_red.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt", "chalk", "emery"
+          ],
+          "type": "png",
+          "name": "IMAGE_BATTERY_ORANGE",
+          "file": "battery_orange.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt", "chalk", "emery"
+          ],
+          "type": "png",
+          "name": "IMAGE_BATTERY_GREEN",
+          "file": "battery_green.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt", "chalk", "emery"
+          ],
+          "type": "png",
+          "name": "IMAGE_BLUETOOTH_ICON_BASALT",
+          "file": "bluetooth.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png",
+          "name": "IMAGE_BLUETOOTH_ICON_APLITE",
+          "file": "bluetooth-aplite.png"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_12",
+          "file": "droidsans.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_11",
+          "file": "droidsans.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_BOLD_12",
+          "file": "droidsans-bold.ttf"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_BACKGROUND_APLITE",
+          "file": "background-aplite.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_BATTERY_APLITE_LEFT",
+          "file": "battery-aplite-left.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "IMAGE_BATTERY_APLITE_RIGHT",
+          "file": "battery-aplite-right.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "0bf39622-a77b-42b8-846a-2a21ac9d2bec",
+    "messageKeys": {
+      "accessCode": 1001,
+      "per_btrealert": 1,
+      "per_accent_colour": 8,
+      "per_background_colour": 9,
+      "per_btdisalert": 0,
+      "checksum": 1002,
+      "pebbleAccountToken": 6969,
+      "per_name_1": 6,
+      "gs_date_format": 2000,
+      "email": 1000,
+      "per_date_format": 4,
+      "per_bluetooth_indicator": 5,
+      "per_boot_anim": 3
+    },
+    "enableMultiJS": true,
+    "displayName": "Personal",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Personal"
+}

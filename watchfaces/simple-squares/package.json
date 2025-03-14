@@ -1,0 +1,66 @@
+{
+  "version": "2.3.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_SQUARE_DEAL_60",
+          "file": "square_deal.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_SQUARE_DEAL_22",
+          "file": "square_deal.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "4920f1e2-50ef-4f47-a12f-cc62ac5ac4fa",
+    "messageKeys": {
+      "btdisalert": 0,
+      "checksum": 1002,
+      "pebbleAccountToken": 6969,
+      "btrealert": 1,
+      "hour_colour": 8,
+      "battery_bar": 6,
+      "email": 1000,
+      "date_colour": 5,
+      "minute_colour": 9,
+      "battery_bar_colour": 7,
+      "background_colour": 10,
+      "date": 4,
+      "accessCode": 1001,
+      "day": 2,
+      "day_colour": 3
+    },
+    "enableMultiJS": true,
+    "displayName": "Simple Squares",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Simple Squares"
+}

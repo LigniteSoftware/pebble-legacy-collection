@@ -1,0 +1,69 @@
+{
+  "version": "2.5.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_20",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_16",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "b32c5bbc-57d1-4f6c-91f1-13777fac283a",
+    "messageKeys": {
+      "accessCode": 1001,
+      "pebbleAccountToken": 6969,
+      "sim_time_colour": 11,
+      "sim_digitaltime": 5,
+      "gs_date_format": 2000,
+      "sim_minute_colour": 9,
+      "sim_day_colour": 12,
+      "sim_battery_bar": 16,
+      "email": 1000,
+      "sim_btrealert": 1,
+      "sim_hour_hand": 7,
+      "sim_advanced_date_colour": 13,
+      "sim_background_colour": 14,
+      "checksum": 1002,
+      "sim_btdisalert": 0,
+      "sim_weekday": 3,
+      "sim_advancedday": 4,
+      "sim_hour_colour": 10,
+      "sim_minute_hand": 6
+    },
+    "enableMultiJS": true,
+    "displayName": "Simplified Analogue",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Simplified"
+}

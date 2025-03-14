@@ -1,0 +1,79 @@
+{
+  "version": "2.5.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "characterRegex": "[0-9, :]",
+          "name": "FONT_IMPACT_24",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_30",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_BLUETOOTH_ICON",
+          "file": "bt_icon.png"
+        },
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "MENU_ICON",
+          "file": "menu.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "e1c75a76-27fc-4f9c-85b3-73920ffdb3b7",
+    "messageKeys": {
+      "spe_dithering": 7,
+      "spe_bootanim": 5,
+      "pebbleAccountToken": 6969,
+      "spe_bticon": 6,
+      "gs_date_format": 2000,
+      "spe_showborders": 4,
+      "spe_btrealert": 2,
+      "spe_invert": 0,
+      "email": 1000,
+      "spe_middle_colour": 10,
+      "spe_inner_colour": 11,
+      "checksum": 1002,
+      "spe_outer_colour": 9,
+      "accessCode": 1001,
+      "spe_btdisalert": 1
+    },
+    "enableMultiJS": true,
+    "displayName": "Speedometer",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Speedometer"
+}

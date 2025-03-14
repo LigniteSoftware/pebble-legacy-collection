@@ -1,0 +1,87 @@
+{
+  "version": "2.5.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "raw",
+          "name": "RAW_BEBAS_NEUE_BOLD",
+          "file": "bebas.ffont"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_BOLD_20",
+          "file": "droid_sans_bold.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_BOLD_16",
+          "file": "droid_sans_bold.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_REGULAR_10",
+          "file": "droid_sans_regular.ttf"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_BACKGROUND",
+          "file": "background.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "19997593-53ed-436d-96f6-ed73dd7c0014",
+    "messageKeys": {
+      "btdisalert": 0,
+      "btrealert": 1,
+      "outer_circle_background_colour": 11,
+      "day_and_date_colour": 5,
+      "outer_circle_on_colour": 15,
+      "outer_circle_foreground_colour": 12,
+      "pebbleAccountToken": 6969,
+      "accessCode": 1001,
+      "hands_colour": 6,
+      "email": 1000,
+      "battery_bar_background_colour": 9,
+      "outer_circle_off_colour": 14,
+      "show_battery_bar": 8,
+      "gs_date_format": 2000,
+      "battery_bar_foreground_colour": 10,
+      "date": 4,
+      "outer_circle_text_colour": 13,
+      "time_instead": 2,
+      "day": 3,
+      "hands_thickness": 7,
+      "checksum": 1002,
+      "window_background_colour": 16
+    },
+    "enableMultiJS": true,
+    "displayName": "Circle Inception",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "basalt",
+      "chalk"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Circle Inception"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "better-timezone",
+  "version": "0.0.2",
+  "homepage": "https://www.claralabs.com",
+  "authors": [
+    "Oliver Song <oliver@claralabs.com>"
+  ],
+  "description": "A timezone selector that just works.",
+  "main": "src/better-timezone.js",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "jquery-plugin",
+    "timezone",
+    "select",
+    "selector"
+  ],
+  "license": "MIT"
+}

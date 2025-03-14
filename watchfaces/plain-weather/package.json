@@ -1,0 +1,77 @@
+{
+  "version": "2.12.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_REGULAR_14",
+          "file": "fonts/droid_sans.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_BOLD_18",
+          "file": "fonts/droid_sans_bold.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_REGULAR_60",
+          "file": "fonts/bebas_neue.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_WEATHER_ICON_45",
+          "file": "fonts/weather_icons.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "bf1411d7-0b52-4685-ab3c-d18d603a9ee0",
+    "messageKeys": {
+      "btdisalert": 0,
+      "temperature": 101,
+      "accent": 6,
+      "pebbleAccountToken": 6969,
+      "btrealert": 1,
+      "background_colour": 7,
+      "battery_bar": 5,
+      "gs_date_format": 2000,
+      "request_weather": 200,
+      "weather": 2,
+      "email": 1000,
+      "checksum": 1002,
+      "date": 4,
+      "accessCode": 1001,
+      "day": 3,
+      "icon": 100
+    },
+    "enableMultiJS": true,
+    "displayName": "Plain Weather",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Plain Weather"
+}

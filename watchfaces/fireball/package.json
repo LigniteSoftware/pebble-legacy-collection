@@ -1,0 +1,79 @@
+{
+  "version": "2.5.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_28",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_REGULAR_10",
+          "file": "droid_sans_regular.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_TIME_MASK",
+          "file": "time_mask.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BATTERY_MASK",
+          "file": "battery_mask.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_TRIAL_ENDED",
+          "file": "lignite/trial_ended.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "b3509ab8-a9cb-4823-9442-37f02f5236a0",
+    "messageKeys": {
+      "btdisalert": 0,
+      "checksum": 1002,
+      "pebbleAccountToken": 6969,
+      "minute_depends_on_minute": 3,
+      "btrealert": 1,
+      "background_colour": 8,
+      "battery_bar": 4,
+      "gs_date_format": 2000,
+      "battery_colour": 6,
+      "minute_colour": 5,
+      "date": 2,
+      "accessCode": 1001,
+      "email": 1000,
+      "text_colour": 7
+    },
+    "enableMultiJS": true,
+    "displayName": "Fireball",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "basalt",
+      "chalk"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Fireball"
+}

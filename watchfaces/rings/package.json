@@ -1,0 +1,69 @@
+{
+  "version": "2.3.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_IMPACT_18",
+          "file": "impact.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BLUETOOTH_FILLED",
+          "file": "bluetooth_filled.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "a707a29f-c9d1-4f87-884a-76498dfe177f",
+    "messageKeys": {
+      "battery_radial": 9,
+      "btdisalert": 0,
+      "hour_radial": 5,
+      "minute_radial_colour": 8,
+      "second_radial_colour": 4,
+      "checksum": 1002,
+      "minute_radial": 7,
+      "btrealert": 1,
+      "battery_radial_colour": 10,
+      "email": 1000,
+      "pebbleAccountToken": 6969,
+      "hour_radial_colour": 6,
+      "week_number": 2,
+      "bluetooth_icon_colour": 11,
+      "second_radial": 3,
+      "accessCode": 1001,
+      "window_background_colour": 12,
+      "text_colour": 13
+    },
+    "enableMultiJS": true,
+    "displayName": "Rings",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Rings"
+}

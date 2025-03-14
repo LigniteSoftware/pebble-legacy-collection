@@ -1,0 +1,237 @@
+{
+  "version": "2.2.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_SQUARED_60",
+          "file": "squared.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_SQUARED_20",
+          "file": "squared.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_SQUARED_14",
+          "file": "squared.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_14",
+          "file": "droidsans.ttf"
+        },
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "MENU_ICON",
+          "file": "menu.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_1",
+          "file": "numbers/basalt/1.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_2",
+          "file": "numbers/basalt/2.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_3",
+          "file": "numbers/basalt/3.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_4",
+          "file": "numbers/basalt/4.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_5",
+          "file": "numbers/basalt/5.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_6",
+          "file": "numbers/basalt/6.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_7",
+          "file": "numbers/basalt/7.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_8",
+          "file": "numbers/basalt/8.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_9",
+          "file": "numbers/basalt/9.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt"
+          ],
+          "type": "png",
+          "name": "NUMBER_0",
+          "file": "numbers/basalt/0.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_1_APLITE",
+          "file": "numbers/aplite/1.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_2_APLITE",
+          "file": "numbers/aplite/2.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_3_APLITE",
+          "file": "numbers/aplite/3.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_4_APLITE",
+          "file": "numbers/aplite/4.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_5_APLITE",
+          "file": "numbers/aplite/5.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_6_APLITE",
+          "file": "numbers/aplite/6.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_7_APLITE",
+          "file": "numbers/aplite/7.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_8_APLITE",
+          "file": "numbers/aplite/8.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_9_APLITE",
+          "file": "numbers/aplite/9.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite", "diorite"
+          ],
+          "type": "png-trans",
+          "name": "NUMBER_0_APLITE",
+          "file": "numbers/aplite/0.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "e1fe3595-cb81-45c3-9720-302fdd6316da",
+    "messageKeys": {
+      "li_btrealert": 1,
+      "li_battery_bar_mode": 9,
+      "li_showdate": 3,
+      "checksum": 1002,
+      "pebbleAccountToken": 6969,
+      "li_btdisalert": 0,
+      "li_hour_colour": 7,
+      "li_altdateformat": 4,
+      "accessCode": 1001,
+      "email": 1000
+    },
+    "enableMultiJS": true,
+    "displayName": "Lines",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "diorite"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Lines"
+}

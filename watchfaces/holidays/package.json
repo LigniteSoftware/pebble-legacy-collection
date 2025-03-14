@@ -1,0 +1,159 @@
+{
+  "version": "2.8.0",
+  "author": "Lignite",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "png",
+          "name": "IMAGE_DAY",
+          "file": "colour/day.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "png",
+          "name": "IMAGE_EVENING",
+          "file": "colour/evening.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "png",
+          "name": "IMAGE_NIGHT",
+          "file": "colour/night.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "png",
+          "name": "IMAGE_DAY_PRESENTS",
+          "file": "colour/day-presents.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "png",
+          "name": "IMAGE_EVENING_PRESENTS",
+          "file": "colour/evening-presents.png"
+        },
+        {
+          "targetPlatforms": [
+            "basalt",
+            "chalk"
+          ],
+          "type": "png",
+          "name": "IMAGE_NIGHT_PRESENTS",
+          "file": "colour/night-presents.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png",
+          "name": "IMAGE_DAY",
+          "file": "bw/day-b-w.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png",
+          "name": "IMAGE_NIGHT",
+          "file": "bw/night-b-w.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png",
+          "name": "IMAGE_DAY_PRESENTS",
+          "file": "bw/day-b-w-presents.png"
+        },
+        {
+          "targetPlatforms": [
+            "aplite",
+            "diorite"
+          ],
+          "type": "png",
+          "name": "IMAGE_NIGHT_PRESENTS",
+          "file": "bw/night-b-w-presents.png"
+        },
+        {
+          "type": "font",
+          "name": "FONT_DROID_SANS_REGULAR_14",
+          "file": "droid_sans_regular.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FONT_BEBAS_NEUE_REGULAR_38",
+          "file": "bebas_neue.ttf"
+        },
+        {
+          "type": "bitmap",
+          "name": "LIGNITE_IMAGE_BLUETOOTH_ICON",
+          "file": "lignite/bluetooth_icon.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "2eaaeb88-b4cb-4eb4-a0b8-82896d67ca1d",
+    "messageKeys": {
+      "accessCode": 1001,
+      "btdisalert": 0,
+      "temperature": 101,
+      "custom_location": 4,
+      "checksum": 1002,
+      "pebbleAccountToken": 6969,
+      "use_celsius": 3,
+      "btrealert": 1,
+      "email": 1000,
+      "request_weather": 200,
+      "shake_to_animate": 8,
+      "amount_of_snowflakes": 9,
+      "show_snowflakes": 7,
+      "date": 6,
+      "show_weather": 2,
+      "text_colour": 10,
+      "day": 5,
+      "icon": 100
+    },
+    "enableMultiJS": true,
+    "displayName": "Holidays",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "diorite"
+    ],
+    "capabilities": [
+      "configurable"
+    ]
+  },
+  "name": "Holidays"
+}
